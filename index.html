@@ -1,854 +1,801 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yasmine’s Trädgårdsavfall och Skräp | Bortforsling i Helsingborg & nordvästra Skåne</title>
-  <meta name="description" content="Bortforsling av trädgårdsavfall, skräp, möbler, grovsopor, förrådstömning, dödsbo-rensning samt fällning av små träd och fruktträd. Snabb offert via SMS. Vi utgår från Helsingborg och hjälper kunder i hela nordvästra Skåne." />
-
-  <meta property="og:title" content="Yasmine’s Trädgårdsavfall och Skräp" />
-  <meta property="og:description" content="Bortforsling • Trädgårdsavfall • Förrådstömning • Dödsbo-rensning • Små träd & fruktträd" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="hero.jpg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg:#07130f;
-      --surface:#0b1b14;
-      --card:#0e231b;
-      --text:#eef7f2;
-      --muted:rgba(238,247,242,.78);
-      --line:rgba(255,255,255,.10);
-      --green:#22c55e;
-      --green2:#34d399;
-      --accent:#a7f3d0;
-      --shadow:0 18px 55px rgba(0,0,0,.35);
-      --radius:18px;
-      --max:1120px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(1000px 700px at 10% -10%, rgba(52,211,153,.25), transparent 60%),
-        radial-gradient(900px 600px at 90% 10%, rgba(34,197,94,.18), transparent 55%),
-        linear-gradient(180deg, var(--bg), #06100c 70%, #040b07);
-      color:var(--text);
-    }
-
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px;}
-
-    .top{
-      padding:18px 0;
-      border-bottom:1px solid var(--line);
-      position:sticky;
-      top:0;
-      backdrop-filter: blur(10px);
-      background: rgba(7,19,15,.72);
-      z-index:100;
-    }
-
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      flex-wrap:wrap;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width:0;
-    }
-
-    .logo{
-      width:48px;
-      height:48px;
-      border-radius:14px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex:0 0 auto;
-    }
-
-    .logo img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      padding:7px;
-    }
-
-    .brand .text{
-      line-height:1.1;
-      min-width:0;
-    }
-
-    .brand strong{
-      display:block;
-      font-size:14px;
-      letter-spacing:.2px;
-    }
-
-    .brand span{
-      display:block;
-      font-size:12px;
-      color:var(--muted);
-      margin-top:3px;
-    }
-
-    .navlinks{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-
-    .navlinks a{
-      font-size:13px;
-      color:var(--muted);
-    }
-
-    .navlinks a:hover{color:var(--text)}
-
-    .cta{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      padding:11px 15px;
-      border-radius:14px;
-      font-weight:800;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-      transition:transform .08s ease, opacity .2s ease;
-      white-space:nowrap;
-    }
-
-    .btn.primary{
-      background:linear-gradient(135deg, var(--green), var(--green2));
-      border:0;
-      color:#062012;
-      box-shadow:0 16px 30px rgba(34,197,94,.18);
-    }
-
-    .btn:hover{transform:translateY(-1px)}
-    .btn:active{transform:translateY(0)}
-    .btn.full{width:100%}
-
-    .hero{
-      padding:44px 0 24px;
-    }
-
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.15fr 0.85fr;
-      gap:18px;
-      align-items:stretch;
-    }
-
-    .hero-card{
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
-      overflow:hidden;
-      position:relative;
-    }
-
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      font-size:12px;
-      font-weight:900;
-      color:var(--accent);
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(167,243,208,.18);
-      background:rgba(52,211,153,.10);
-      margin-bottom:14px;
-    }
-
-    .hero h1{
-      margin:0 0 12px;
-      font-size:clamp(30px, 4.4vw, 50px);
-      line-height:1.04;
-      letter-spacing:-.03em;
-      max-width:12ch;
-    }
-
-    .hero p{
-      margin:0 0 18px;
-      color:var(--muted);
-      font-size:16px;
-      line-height:1.68;
-      max-width:60ch;
-    }
-
-    .badges{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:16px 0 18px;
-    }
-
-    .badge{
-      font-size:12px;
-      font-weight:900;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.05);
-      color:rgba(238,247,242,.88);
-    }
-
-    .hero-actions{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:6px;
-    }
-
-    .hero-note{
-      margin-top:12px;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.5;
-    }
-
-    .side-card{
-      background:rgba(14,35,27,.75);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      display:flex;
-      flex-direction:column;
-    }
-
-    .hero-img{
-      position:relative;
-      min-height:290px;
-      background:#000;
-    }
-
-    .hero-img img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      filter:contrast(1.02) saturate(1.03);
-      opacity:.93;
-    }
-
-    .mini{
-      padding:18px;
-    }
-
-    .mini h3{
-      margin:0 0 8px;
-      font-size:17px;
-    }
-
-    .mini p{
-      margin:0;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.6;
-    }
-
-    .mini .mini-row{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:14px;
-    }
-
-    .section{
-      padding:28px 0;
-    }
-
-    .section h2{
-      margin:0 0 12px;
-      font-size:24px;
-      letter-spacing:-.01em;
-    }
-
-    .section .lead{
-      margin:0 0 18px;
-      color:var(--muted);
-      line-height:1.65;
-      max-width:70ch;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
-      gap:12px;
-    }
-
-    .card{
-      background:rgba(14,35,27,.70);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:0 10px 30px rgba(0,0,0,.22);
-      text-align:left;
-    }
-
-    .card .t{
-      font-weight:900;
-      margin-bottom:7px;
-      font-size:15px;
-    }
-
-    .card .d{
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.65;
-    }
-
-    .trust{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
-      gap:12px;
-    }
-
-    .trust .card{
-      padding:16px;
-    }
-
-    .how{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
-      gap:12px;
-    }
-
-    .step{
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      padding:18px;
-      text-align:left;
-    }
-
-    .num{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:30px;
-      height:30px;
-      border-radius:10px;
-      background:rgba(52,211,153,.18);
-      border:1px solid rgba(52,211,153,.22);
-      font-weight:900;
-      color:var(--accent);
-      margin-bottom:10px;
-    }
-
-    .step-title{
-      font-weight:900;
-      margin-bottom:6px;
-    }
-
-    .step .d{
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.6;
-    }
-
-    .areas{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .chip{
-      font-size:13px;
-      font-weight:900;
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.05);
-      color:rgba(238,247,242,.92);
-    }
-
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(4, minmax(0,1fr));
-      gap:12px;
-    }
-
-    .gallery img{
-      width:100%;
-      aspect-ratio:4/3;
-      object-fit:cover;
-      border-radius:var(--radius);
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow:0 14px 30px rgba(0,0,0,.25);
-      background:#000;
-    }
-
-    .contact{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      align-items:start;
-    }
-
-    .panel{
-      background:rgba(14,35,27,.70);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:0 10px 30px rgba(0,0,0,.22);
-      text-align:left;
-    }
-
-    .panel h3{
-      margin:0 0 10px;
-      font-size:17px;
-    }
-
-    .panel p{
-      margin:0 0 12px;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.6;
-    }
-
-    .faq{
-      display:grid;
-      gap:12px;
-    }
-
-    .faq-item{
-      background:rgba(14,35,27,.70);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow:0 10px 30px rgba(0,0,0,.18);
-    }
-
-    .faq-item h3{
-      margin:0 0 8px;
-      font-size:16px;
-    }
-
-    .faq-item p{
-      margin:0;
-      color:var(--muted);
-      font-size:13px;
-      line-height:1.65;
-    }
-
-    .footer{
-      padding:22px 0 34px;
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      font-size:13px;
-      margin-top:10px;
-    }
-
-    @media (max-width:980px){
-      .hero-grid{grid-template-columns:1fr}
-      .grid{grid-template-columns:repeat(2, minmax(0,1fr))}
-      .trust{grid-template-columns:1fr}
-      .how{grid-template-columns:1fr}
-      .gallery{grid-template-columns:repeat(2, minmax(0,1fr))}
-      .contact{grid-template-columns:1fr}
-      .navlinks{display:none}
-      .hero h1{max-width:100%}
-    }
-
-    @media (max-width:640px){
-      .grid{grid-template-columns:1fr}
-      .gallery{grid-template-columns:1fr}
-      .hero-card,.panel,.card,.step,.faq-item{padding:16px}
-      .btn{width:100%}
-      .hero-actions{flex-direction:column}
-      .mini .mini-row{flex-direction:column}
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Yasmine’s Trädgårdsavfall och Skräp",
-    "url":"https://www.yasmine.nu",
-    "telephone":"+46768528512",
-    "email":"yasminesavfall@gmail.com",
-    "areaServed":[
-      "Helsingborg",
-      "Nordvästra Skåne",
-      "Närliggande kommuner"
-    ],
-    "serviceType":[
-      "Bortforsling",
-      "Trädgårdsavfall",
-      "Förrådstömning",
-      "Möbler och grovsopor",
-      "Dödsbo-rensning",
-      "Fällning av små träd",
-      "Fällning av fruktträd"
-    ],
-    "image":[
-      "hero.jpg",
-      "before1.jpg",
-      "after1.jpg",
-      "before2.jpg",
-      "after2.jpg"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Hur får jag offert?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Det snabbaste är att skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med pris och tid."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Hjälper ni även med små träd och fruktträd?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Ja, vi hjälper även till att fälla små träd och fruktträd. Vi kan också ta hand om bortforslingen efteråt."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Vilka områden hjälper ni i?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Vi utgår från Helsingborg och hjälper kunder i närliggande kommuner och hela nordvästra Skåne."
-        }
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yasmine’s Trädgårdsavfall och Skräp | Bortforsling i Helsingborg & nordvästra Skåne</title>
+<meta name="description" content="Bortforsling av trädgårdsavfall, skräp, möbler, grovsopor, förrådstömning samt fällning av små träd och fruktträd. Vi hanterar inte farligt avfall. Snabb offert via SMS. Vi utgår från Helsingborg och hjälper kunder i hela nordvästra Skåne." />
+<meta property="og:title" content="Yasmine’s Trädgårdsavfall och Skräp" />
+<meta property="og:description" content="Bortforsling • Trädgårdsavfall • Förrådstömning • Små träd & fruktträd • Vi hanterar inte farligt avfall" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="hero.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#07130f;
+--surface:#0b1b14;
+--card:#0e231b;
+--text:#eef7f2;
+--muted:rgba(238,247,242,.78);
+--line:rgba(255,255,255,.10);
+--green:#22c55e;
+--green2:#34d399;
+--accent:#a7f3d0;
+--shadow:0 18px 55px rgba(0,0,0,.35);
+--radius:18px;
+--max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{height:100%}
+body{
+margin:0;
+font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+background:
+radial-gradient(1000px 700px at 10% -10%, rgba(52,211,153,.25), transparent 60%),
+radial-gradient(900px 600px at 90% 10%, rgba(34,197,94,.18), transparent 55%),
+linear-gradient(180deg, var(--bg), #06100c 70%, #040b07);
+color:var(--text);
+}
+a{color:inherit; text-decoration:none}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 18px;}
+.top{
+padding:18px 0;
+border-bottom:1px solid var(--line);
+position:sticky;
+top:0;
+backdrop-filter: blur(10px);
+background: rgba(7,19,15,.72);
+z-index:100;
+}
+.nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:14px;
+flex-wrap:wrap;
+}
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+min-width:0;
+}
+.logo{
+width:48px;
+height:48px;
+border-radius:14px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.10);
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+flex:0 0 auto;
+}
+.logo img{
+width:100%;
+height:100%;
+object-fit:contain;
+padding:7px;
+}
+.brand .text{
+line-height:1.1;
+min-width:0;
+}
+.brand strong{
+display:block;
+font-size:14px;
+letter-spacing:.2px;
+}
+.brand span{
+display:block;
+font-size:12px;
+color:var(--muted);
+margin-top:3px;
+}
+.navlinks{
+display:flex;
+gap:14px;
+flex-wrap:wrap;
+align-items:center;
+}
+.navlinks a{
+font-size:13px;
+color:var(--muted);
+}
+.navlinks a:hover{color:var(--text)}
+.cta{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+padding:11px 15px;
+border-radius:14px;
+font-weight:800;
+border:1px solid rgba(255,255,255,.12);
+background:rgba(255,255,255,.06);
+color:var(--text);
+transition:transform .08s ease, opacity .2s ease;
+white-space:nowrap;
+}
+.btn.primary{
+background:linear-gradient(135deg, var(--green), var(--green2));
+border:0;
+color:#062012;
+box-shadow:0 16px 30px rgba(34,197,94,.18);
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn.full{width:100%}
+.hero{
+padding:44px 0 24px;
+}
+.hero-grid{
+display:grid;
+grid-template-columns:1.15fr 0.85fr;
+gap:18px;
+align-items:stretch;
+}
+.hero-card{
+background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+border:1px solid rgba(255,255,255,.10);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:28px;
+overflow:hidden;
+position:relative;
+}
+.eyebrow{
+display:inline-flex;
+align-items:center;
+gap:8px;
+font-size:12px;
+font-weight:900;
+color:var(--accent);
+padding:8px 10px;
+border-radius:999px;
+border:1px solid rgba(167,243,208,.18);
+background:rgba(52,211,153,.10);
+margin-bottom:14px;
+}
+.hero h1{
+margin:0 0 12px;
+font-size:clamp(30px, 4.4vw, 50px);
+line-height:1.04;
+letter-spacing:-.03em;
+max-width:12ch;
+}
+.hero p{
+margin:0 0 18px;
+color:var(--muted);
+font-size:16px;
+line-height:1.68;
+max-width:60ch;
+}
+.badges{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin:16px 0 18px;
+}
+.badge{
+font-size:12px;
+font-weight:900;
+padding:8px 10px;
+border-radius:999px;
+border:1px solid rgba(255,255,255,.12);
+background:rgba(255,255,255,.05);
+color:rgba(238,247,242,.88);
+}
+.hero-actions{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:6px;
+}
+.hero-note{
+margin-top:12px;
+color:var(--muted);
+font-size:13px;
+line-height:1.5;
+}
+.side-card{
+background:rgba(14,35,27,.75);
+border:1px solid rgba(255,255,255,.10);
+border-radius:var(--radius);
+overflow:hidden;
+box-shadow:var(--shadow);
+display:flex;
+flex-direction:column;
+}
+.hero-img{
+position:relative;
+min-height:290px;
+background:#000;
+}
+.hero-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+filter:contrast(1.02) saturate(1.03);
+opacity:.93;
+}
+.mini{
+padding:18px;
+}
+.mini h3{
+margin:0 0 8px;
+font-size:17px;
+}
+.mini p{
+margin:0;
+color:var(--muted);
+font-size:13px;
+line-height:1.6;
+}
+.mini .mini-row{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-top:14px;
+}
+.section{
+padding:28px 0;
+}
+.section h2{
+margin:0 0 12px;
+font-size:24px;
+letter-spacing:-.01em;
+}
+.section .lead{
+margin:0 0 18px;
+color:var(--muted);
+line-height:1.65;
+max-width:70ch;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(3, minmax(0,1fr));
+gap:12px;
+}
+.card{
+background:rgba(14,35,27,.70);
+border:1px solid rgba(255,255,255,.10);
+border-radius:var(--radius);
+padding:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.22);
+text-align:left;
+}
+.card .t{
+font-weight:900;
+margin-bottom:7px;
+font-size:15px;
+}
+.card .d{
+color:var(--muted);
+font-size:13px;
+line-height:1.65;
+}
+.trust{
+display:grid;
+grid-template-columns:repeat(3, minmax(0,1fr));
+gap:12px;
+}
+.trust .card{
+padding:16px;
+}
+.how{
+display:grid;
+grid-template-columns:repeat(3, minmax(0,1fr));
+gap:12px;
+}
+.step{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.10);
+border-radius:var(--radius);
+padding:18px;
+text-align:left;
+}
+.num{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:30px;
+height:30px;
+border-radius:10px;
+background:rgba(52,211,153,.18);
+border:1px solid rgba(52,211,153,.22);
+font-weight:900;
+color:var(--accent);
+margin-bottom:10px;
+}
+.step-title{
+font-weight:900;
+margin-bottom:6px;
+}
+.step .d{
+color:var(--muted);
+font-size:13px;
+line-height:1.6;
+}
+.areas{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+.chip{
+font-size:13px;
+font-weight:900;
+padding:10px 12px;
+border-radius:999px;
+border:1px solid rgba(255,255,255,.12);
+background:rgba(255,255,255,.05);
+color:rgba(238,247,242,.92);
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(4, minmax(0,1fr));
+gap:12px;
+}
+.gallery img{
+width:100%;
+aspect-ratio:4/3;
+object-fit:cover;
+border-radius:var(--radius);
+border:1px solid rgba(255,255,255,.10);
+box-shadow:0 14px 30px rgba(0,0,0,.25);
+background:#000;
+}
+.contact{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+align-items:start;
+}
+.panel{
+background:rgba(14,35,27,.70);
+border:1px solid rgba(255,255,255,.10);
+border-radius:var(--radius);
+padding:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.22);
+text-align:left;
+}
+.panel h3{
+margin:0 0 10px;
+font-size:17px;
+}
+.panel p{
+margin:0 0 12px;
+color:var(--muted);
+font-size:13px;
+line-height:1.6;
+}
+.faq{
+display:grid;
+gap:12px;
+}
+.faq-item{
+background:rgba(14,35,27,.70);
+border:1px solid rgba(255,255,255,.10);
+border-radius:var(--radius);
+padding:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+.faq-item h3{
+margin:0 0 8px;
+font-size:16px;
+}
+.faq-item p{
+margin:0;
+color:var(--muted);
+font-size:13px;
+line-height:1.65;
+}
+.footer{
+padding:22px 0 34px;
+border-top:1px solid var(--line);
+color:var(--muted);
+font-size:13px;
+margin-top:10px;
+}
+@media (max-width:980px){
+.hero-grid{grid-template-columns:1fr}
+.grid{grid-template-columns:repeat(2, minmax(0,1fr))}
+.trust{grid-template-columns:1fr}
+.how{grid-template-columns:1fr}
+.gallery{grid-template-columns:repeat(2, minmax(0,1fr))}
+.contact{grid-template-columns:1fr}
+.navlinks{display:none}
+.hero h1{max-width:100%}
+}
+@media (max-width:640px){
+.grid{grid-template-columns:1fr}
+.gallery{grid-template-columns:1fr}
+.hero-card,.panel,.card,.step,.faq-item{padding:16px}
+.btn{width:100%}
+.hero-actions{flex-direction:column}
+.mini .mini-row{flex-direction:column}
+}
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"Yasmine’s Trädgårdsavfall och Skräp",
+"url":"https://www.yasmine.nu",
+"telephone":"+46768528512",
+"email":"yasminesavfall@gmail.com",
+"areaServed":[
+"Helsingborg",
+"Nordvästra Skåne",
+"Närliggande kommuner"
+],
+"serviceType":[
+"Bortforsling",
+"Trädgårdsavfall",
+"Förrådstömning",
+"Möbler och grovsopor",
+"Fällning av små träd",
+"Fällning av fruktträd"
+],
+"image":[
+"hero.jpg",
+"before1.jpg",
+"after1.jpg",
+"before2.jpg",
+"after2.jpg"
+]
+}
+</script>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{
+"@type":"Question",
+"name":"Hur får jag offert?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Det snabbaste är att skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med pris och tid."
+}
+},
+{
+"@type":"Question",
+"name":"Hjälper ni även med små träd och fruktträd?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Ja, vi hjälper även till att fälla små träd och fruktträd. Vi kan också ta hand om bortforslingen efteråt."
+}
+},
+{
+"@type":"Question",
+"name":"Hanterar ni farligt avfall?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Nej, vi hanterar inte farligt avfall som kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller andra miljöfarliga material."
+}
+},
+{
+"@type":"Question",
+"name":"Vilka områden hjälper ni i?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Vi utgår från Helsingborg och hjälper kunder i närliggande kommuner och hela nordvästra Skåne."
+}
+}
+]
+}
+</script>
 </head>
 
 <body>
 
-  <div class="top">
-    <div class="wrap">
-      <div class="nav">
-        <div class="brand">
-          <div class="logo">
-            <img src="logo.png" alt="Yasmine’s Trädgårdsavfall och Skräp">
-          </div>
-          <div class="text">
-            <strong>Yasmine’s Trädgårdsavfall och Skräp</strong>
-            <span>Snabb offert • Smidig hämtning • Helsingborg & nordvästra Skåne</span>
-          </div>
-        </div>
+<div class="top">
+<div class="wrap">
+<div class="nav">
+<div class="brand">
+<div class="logo">
+<img src="logo.png" alt="Yasmine’s Trädgårdsavfall och Skräp">
+</div>
+<div class="text">
+<strong>Yasmine’s Trädgårdsavfall och Skräp</strong>
+<span>Snabb offert • Smidig hämtning • Helsingborg & nordvästra Skåne</span>
+</div>
+</div>
 
-        <div class="navlinks">
-          <a href="#tjanster">Tjänster</a>
-          <a href="#varfor-oss">Varför oss</a>
-          <a href="#sa-funkar-det">Så funkar det</a>
-          <a href="#omraden">Områden</a>
-          <a href="#fore-efter">Före/efter</a>
-          <a href="#faq">Frågor</a>
-          <a href="#kontakt">Kontakt</a>
-        </div>
+<div class="navlinks">
+<a href="#tjanster">Tjänster</a>
+<a href="#varfor-oss">Varför oss</a>
+<a href="#sa-funkar-det">Så funkar det</a>
+<a href="#omraden">Områden</a>
+<a href="#fore-efter">Före/efter</a>
+<a href="#faq">Frågor</a>
+<a href="#kontakt">Kontakt</a>
+</div>
 
-        <div class="cta">
-          <a class="btn primary" href="tel:0768528512">📞 Ring</a>
-          <a class="btn" href="sms:0768528512">💬 SMS offert</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="cta">
+<a class="btn primary" href="tel:0768528512">📞 Ring</a>
+<a class="btn" href="sms:0768528512">💬 SMS offert</a>
+</div>
+</div>
+</div>
+</div>
 
-  <div class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="hero-card">
-          <div class="eyebrow">✅ Snabb offert via SMS</div>
+<div class="hero">
+<div class="wrap">
+<div class="hero-grid">
 
-          <h1>Smidig bortforsling och trädfällning</h1>
+<div class="hero-card">
+<div class="eyebrow">✅ Snabb offert via SMS</div>
+<h1>Bortforsling, trädgårdsavfall och små träd – snabbt och smidigt</h1>
+<p>
+Vi hjälper privatpersoner och företag med <strong>bortforsling av skräp</strong>,
+<strong>trädgårdsavfall</strong>, <strong>möbler och grovsopor</strong>,
+<strong>förrådstömning</strong> samt <strong>fällning av små träd och fruktträd</strong>.
+Vi hanterar inte farligt avfall. Skicka en bild via SMS så återkommer vi snabbt med prisförslag.
+</p>
 
-          <p>
-            Vi hjälper privatpersoner och företag med <strong>bortforsling av skräp</strong>, <strong>trädgårdsavfall</strong>,
-            <strong>möbler och grovsopor</strong>, <strong>förrådstömning</strong>, <strong>dödsbo-rensning</strong> samt
-            <strong>fällning av små träd och fruktträd</strong>.
-            Skicka en bild via SMS så återkommer vi snabbt med prisförslag.
-          </p>
+<div class="badges">
+<div class="badge">✅ F-skatt</div>
+<div class="badge">✅ Snabb respons</div>
+<div class="badge">✅ Tydlig offert</div>
+<div class="badge">✅ Smidig hämtning</div>
+<div class="badge">✅ Före/efter-bilder</div>
+<div class="badge">⚠️ Ej farligt avfall</div>
+</div>
 
-          <div class="badges">
-            <div class="badge">✅ F-skatt</div>
-            <div class="badge">✅ Snabb respons</div>
-            <div class="badge">✅ Tydlig offert</div>
-            <div class="badge">✅ Smidig hämtning</div>
-            <div class="badge">✅ Före/efter-bilder</div>
-          </div>
+<div class="hero-actions">
+<a class="btn primary" href="sms:0768528512">💬 Skicka bild för offert</a>
+<a class="btn" href="tel:0768528512">📞 Ring 0768528512</a>
+</div>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="sms:0768528512">💬 Skicka bild för offert</a>
-            <a class="btn" href="tel:0768528512">📞 Ring 0768528512</a>
-          </div>
+<div class="hero-note">
+Snabbast går det om du skickar <strong>bild + ort + ungefärlig mängd</strong>.
+</div>
+</div>
 
-          <div class="hero-note">
-            Snabbast går det om du skickar <strong>bild + ort + ungefärlig mängd</strong>.
-          </div>
-        </div>
+<div class="side-card">
+<div class="hero-img">
+<img src="hero.jpg" alt="Yasmine’s – bil och släp vid uppdrag">
+</div>
+<div class="mini">
+<h3>Vi gör det enkelt för dig</h3>
+<p>
+Du skickar bild. Vi återkommer med pris och tid.
+Sedan hämtar vi – snabbt, tydligt och utan krångel.
+</p>
+<div class="mini-row">
+<a class="btn primary" href="sms:0768528512">💬 SMS nu</a>
+<a class="btn" href="#kontakt">📩 Kontakt</a>
+</div>
+</div>
+</div>
 
-        <div class="side-card">
-          <div class="hero-img">
-            <img src="hero.jpg" alt="Yasmine’s – bil och släp vid uppdrag">
-          </div>
-          <div class="mini">
-            <h3>Vi gör det enkelt för dig</h3>
-            <p>
-              Du skickar bild. Vi återkommer med pris och tid. Sedan hämtar vi – snabbt, tydligt och utan krångel.
-            </p>
-            <div class="mini-row">
-              <a class="btn primary" href="sms:0768528512">💬 SMS nu</a>
-              <a class="btn" href="#kontakt">📩 Kontakt</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 
-  <div class="section" id="tjanster">
-    <div class="wrap">
-      <h2>Våra tjänster</h2>
-      <p class="lead">
-        Vi hjälper till med både mindre och större jobb. Oavsett om det gäller några säckar trädgårdsavfall
-        eller en större tömning får du en tydlig offert och smidig hjälp.
-      </p>
+<div class="section" id="tjanster">
+<div class="wrap">
+<h2>Våra tjänster</h2>
+<p class="lead">
+Vi hjälper till med både mindre och större jobb. Oavsett om det gäller några säckar trädgårdsavfall eller en större tömning får du en tydlig offert och smidig hjälp.
+</p>
 
-      <div class="grid">
-        <div class="card">
-          <div class="t">🌿 Trädgårdsavfall</div>
-          <div class="d">Ris, grenar, löv, säckar och blandat trädgårdsavfall – vi hämtar och kör bort.</div>
-        </div>
+<div class="grid">
+<div class="card">
+<div class="t">🌿 Trädgårdsavfall</div>
+<div class="d">Ris, grenar, löv, säckar och blandat trädgårdsavfall – vi hämtar och kör bort.</div>
+</div>
 
-        <div class="card">
-          <div class="t">🌳 Små träd & fruktträd</div>
-          <div class="d">Vi hjälper även till att fälla små träd och fruktträd och kan självklart ta hand om bortforslingen efteråt.</div>
-        </div>
+<div class="card">
+<div class="t">🌳 Små träd & fruktträd</div>
+<div class="d">Vi hjälper även till att fälla små träd och fruktträd och kan självklart ta hand om bortforslingen efteråt.</div>
+</div>
 
-        <div class="card">
-          <div class="t">🪑 Möbler & grovsopor</div>
-          <div class="d">Bortforsling av möbler, grovsopor och blandat skräp. Perfekt vid rensning, flytt eller städning.</div>
-        </div>
+<div class="card">
+<div class="t">🪑 Möbler & grovsopor</div>
+<div class="d">Bortforsling av möbler, grovsopor och blandat skräp. Perfekt vid rensning, flytt eller städning.</div>
+</div>
 
-        <div class="card">
-          <div class="t">📦 Förrådstömning</div>
-          <div class="d">Tömning av förråd, garage, källare och vind – snabbt, smidigt och tryggt.</div>
-        </div>
+<div class="card">
+<div class="t">📦 Förrådstömning</div>
+<div class="d">Tömning av förråd, garage, källare och vind – snabbt, smidigt och tryggt.</div>
+</div>
 
-        <div class="card">
-          <div class="t">🏡 Dödsbo-rensning</div>
-          <div class="d">Diskret och professionell hjälp vid tömning och rensning. Offert efter bild eller genomgång.</div>
-        </div>
+<div class="card">
+<div class="t">🚚 Bortforsling av skräp</div>
+<div class="d">Vi hjälper till med bortforsling av det du vill bli av med – enkelt, snabbt och utan krångel.</div>
+</div>
 
-        <div class="card">
-          <div class="t">🚚 Bortforsling av skräp</div>
-          <div class="d">Vi hjälper till med bortforsling av det du vill bli av med – enkelt, snabbt och utan krångel.</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<div class="t">⚠️ Farligt avfall</div>
+<div class="d">Vi hanterar inte farligt avfall, till exempel kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller andra miljöfarliga material.</div>
+</div>
+</div>
+</div>
+</div>
 
-  <div class="section" id="varfor-oss">
-    <div class="wrap">
-      <h2>Varför välja oss?</h2>
-      <p class="lead">
-        Vi fokuserar på att det ska vara enkelt för dig som kund. Snabb kontakt, tydlig offert och ett jobb som blir gjort ordentligt.
-      </p>
+<div class="section" id="varfor-oss">
+<div class="wrap">
+<h2>Varför välja oss?</h2>
+<p class="lead">
+Vi fokuserar på att det ska vara enkelt för dig som kund. Snabb kontakt, tydlig offert och ett jobb som blir gjort ordentligt.
+</p>
 
-      <div class="trust">
-        <div class="card">
-          <div class="t">✅ Tydligt och enkelt</div>
-          <div class="d">Du får snabbt veta pris och upplägg. Inget krångel, bara raka besked.</div>
-        </div>
-        <div class="card">
-          <div class="t">✅ Riktigt företag</div>
-          <div class="d">Vi arbetar seriöst och med F-skatt, så du vet vem du anlitar.</div>
-        </div>
-        <div class="card">
-          <div class="t">✅ Du slipper tänka på allt</div>
-          <div class="d">Vi hjälper till från första kontakt till hämtning och bortforsling.</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="trust">
+<div class="card">
+<div class="t">✅ Tydligt och enkelt</div>
+<div class="d">Du får snabbt veta pris och upplägg. Inget krångel, bara raka besked.</div>
+</div>
 
-  <div class="section" id="sa-funkar-det">
-    <div class="wrap">
-      <h2>Så funkar det</h2>
-      <p class="lead">Det ska gå snabbt att få hjälp. Därför håller vi processen enkel.</p>
+<div class="card">
+<div class="t">✅ Riktigt företag</div>
+<div class="d">Vi arbetar seriöst och med F-skatt, så du vet vem du anlitar.</div>
+</div>
 
-      <div class="how">
-        <div class="step">
-          <div class="num">1</div>
-          <div class="step-title">Skicka bild</div>
-          <div class="d">SMSa en bild och skriv ort samt ungefärlig mängd.</div>
-        </div>
+<div class="card">
+<div class="t">✅ Du slipper tänka på allt</div>
+<div class="d">Vi hjälper till från första kontakt till hämtning och bortforsling.</div>
+</div>
+</div>
+</div>
+</div>
 
-        <div class="step">
-          <div class="num">2</div>
-          <div class="step-title">Få offert</div>
-          <div class="d">Vi återkommer snabbt med prisförslag och tid som passar.</div>
-        </div>
+<div class="section" id="sa-funkar-det">
+<div class="wrap">
+<h2>Så funkar det</h2>
+<p class="lead">Det ska gå snabbt att få hjälp. Därför håller vi processen enkel.</p>
 
-        <div class="step">
-          <div class="num">3</div>
-          <div class="step-title">Vi hämtar</div>
-          <div class="d">Vi kommer ut och tar hand om jobbet – smidigt och klart.</div>
-        </div>
-      </div>
+<div class="how">
+<div class="step">
+<div class="num">1</div>
+<div class="step-title">Skicka bild</div>
+<div class="d">SMSa en bild och skriv ort samt ungefärlig mängd.</div>
+</div>
 
-      <div style="margin-top:14px;">
-        <a class="btn primary" href="sms:0768528512">💬 Skicka bild för offert</a>
-      </div>
-    </div>
-  </div>
+<div class="step">
+<div class="num">2</div>
+<div class="step-title">Få offert</div>
+<div class="d">Vi återkommer snabbt med prisförslag och tid som passar.</div>
+</div>
 
-  <div class="section" id="omraden">
-    <div class="wrap">
-      <h2>Områden vi hjälper i</h2>
-      <p class="lead">
-        Vi utgår från Helsingborg och hjälper även kunder i närliggande kommuner och i hela nordvästra Skåne.
-      </p>
+<div class="step">
+<div class="num">3</div>
+<div class="step-title">Vi hämtar</div>
+<div class="d">Vi kommer ut och tar hand om jobbet – smidigt och klart.</div>
+</div>
+</div>
 
-      <div class="areas">
-        <div class="chip">Helsingborg</div>
-        <div class="chip">Höganäs</div>
-        <div class="chip">Ängelholm</div>
-        <div class="chip">Bjuv</div>
-        <div class="chip">Åstorp</div>
-        <div class="chip">Närliggande kommuner</div>
-        <div class="chip">Nordvästra Skåne</div>
-      </div>
-    </div>
-  </div>
+<div style="margin-top:14px;">
+<a class="btn primary" href="sms:0768528512">💬 Skicka bild för offert</a>
+</div>
+</div>
+</div>
 
-  <div class="section" id="fore-efter">
-    <div class="wrap">
-      <h2>Före & efter</h2>
-      <p class="lead">Riktiga jobb och riktiga resultat. Här ser du exempel på hur det kan se ut före och efter.</p>
+<div class="section" id="omraden">
+<div class="wrap">
+<h2>Områden vi hjälper i</h2>
+<p class="lead">
+Vi utgår från Helsingborg och hjälper även kunder i närliggande kommuner och i hela nordvästra Skåne.
+</p>
 
-      <div class="gallery">
-        <img src="before1.jpg" alt="Före – bortforsling">
-        <img src="after1.jpg" alt="Efter – städat och klart">
-        <img src="before2.jpg" alt="Före – trädgårdsavfall">
-        <img src="after2.jpg" alt="Efter – rent och snyggt">
-      </div>
-    </div>
-  </div>
+<div class="areas">
+<div class="chip">Helsingborg</div>
+<div class="chip">Höganäs</div>
+<div class="chip">Ängelholm</div>
+<div class="chip">Bjuv</div>
+<div class="chip">Åstorp</div>
+<div class="chip">Närliggande kommuner</div>
+<div class="chip">Nordvästra Skåne</div>
+</div>
+</div>
+</div>
 
-  <div class="section" id="faq">
-    <div class="wrap">
-      <h2>Vanliga frågor</h2>
-      <p class="lead">Här är några snabba svar på frågor många kunder har innan de bokar.</p>
+<div class="section" id="fore-efter">
+<div class="wrap">
+<h2>Före & efter</h2>
+<p class="lead">Riktiga jobb och riktiga resultat. Här ser du exempel på hur det kan se ut före och efter.</p>
 
-      <div class="faq">
-        <div class="faq-item">
-          <h3>Hur får jag offert?</h3>
-          <p>Det snabbaste är att skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med prisförslag.</p>
-        </div>
+<div class="gallery">
+<img src="before1.jpg" alt="Före – bortforsling">
+<img src="after1.jpg" alt="Efter – städat och klart">
+<img src="before2.jpg" alt="Före – trädgårdsavfall">
+<img src="after2.jpg" alt="Efter – rent och snyggt">
+</div>
+</div>
+</div>
 
-        <div class="faq-item">
-          <h3>Kan ni hjälpa till med små träd och fruktträd?</h3>
-          <p>Ja, vi hjälper även till att fälla små träd och fruktträd. Vi kan också ta hand om bortforslingen efteråt.</p>
-        </div>
+<div class="section" id="faq">
+<div class="wrap">
+<h2>Vanliga frågor</h2>
+<p class="lead">Här är några snabba svar på frågor många kunder har innan de bokar.</p>
 
-        <div class="faq-item">
-          <h3>Hjälper ni både privatpersoner och företag?</h3>
-          <p>Ja, vi hjälper både privatpersoner och företag med bortforsling, tömning och trädgårdsavfall.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="faq">
+<div class="faq-item">
+<h3>Hur får jag offert?</h3>
+<p>Det snabbaste är att skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med prisförslag.</p>
+</div>
 
-  <div class="section" id="kontakt">
-    <div class="wrap">
-      <h2>Kontakt</h2>
-      <p class="lead">Snabbast går det via SMS med bild, men du kan också ringa eller mejla direkt.</p>
+<div class="faq-item">
+<h3>Kan ni hjälpa till med små träd och fruktträd?</h3>
+<p>Ja, vi hjälper även till att fälla små träd och fruktträd. Vi kan också ta hand om bortforslingen efteråt.</p>
+</div>
 
-      <div class="contact">
-        <div class="panel">
-          <h3>Snabb kontakt</h3>
-          <p><strong>Telefon:</strong> 0768528512</p>
-          <p><strong>Område:</strong> Helsingborg, närliggande kommuner och hela nordvästra Skåne.</p>
+<div class="faq-item">
+<h3>Hanterar ni farligt avfall?</h3>
+<p>Nej, vi hanterar inte farligt avfall som kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller andra miljöfarliga material.</p>
+</div>
 
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn primary" href="sms:0768528512">💬 Skicka bild via SMS</a>
-            <a class="btn" href="tel:0768528512">📞 Ring nu</a>
-          </div>
-        </div>
+<div class="faq-item">
+<h3>Hjälper ni både privatpersoner och företag?</h3>
+<p>Ja, vi hjälper både privatpersoner och företag med bortforsling, tömning och trädgårdsavfall.</p>
+</div>
+</div>
+</div>
+</div>
 
-        <div class="panel">
-          <h3>Mejl</h3>
-          <p>
-            Vill du mejla direkt? Skriv gärna vad som ska bort, vilken ort det gäller och skicka gärna med en bild om du kan.
-          </p>
+<div class="section" id="kontakt">
+<div class="wrap">
+<h2>Kontakt</h2>
+<p class="lead">Snabbast går det via SMS med bild, men du kan också ringa eller mejla direkt.</p>
 
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn primary" href="mailto:yasminesavfall@gmail.com">📧 yasminesavfall@gmail.com</a>
-            <a class="btn" href="sms:0768528512">💬 Hellre SMS</a>
-          </div>
+<div class="contact">
+<div class="panel">
+<h3>Snabb kontakt</h3>
+<p><strong>Telefon:</strong> 0768528512</p>
+<p><strong>Område:</strong> Helsingborg, närliggande kommuner och hela nordvästra Skåne.</p>
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<a class="btn primary" href="sms:0768528512">💬 Skicka bild via SMS</a>
+<a class="btn" href="tel:0768528512">📞 Ring nu</a>
+</div>
+</div>
 
-          <p style="margin-top:12px; color:var(--muted); font-size:13px;">
-            Tips: SMS med bild går snabbast för offert.
-          </p>
-        </div>
-      </div>
+<div class="panel">
+<h3>Mejl</h3>
+<p>
+Vill du mejla direkt? Skriv gärna vad som ska bort, vilken ort det gäller och skicka gärna med en bild om du kan.
+</p>
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<a class="btn primary" href="mailto:yasminesavfall@gmail.com">📧 yasminesavfall@gmail.com</a>
+<a class="btn" href="sms:0768528512">💬 Hellre SMS</a>
+</div>
+<p style="margin-top:12px; color:var(--muted); font-size:13px;">
+Tips: SMS med bild går snabbast för offert.
+</p>
+</div>
+</div>
 
-      <div style="margin-top:14px;">
-        <a class="btn primary full" href="sms:0768528512">💬 Få snabb offert nu</a>
-      </div>
+<div style="margin-top:14px;">
+<a class="btn primary full" href="sms:0768528512">💬 Få snabb offert nu</a>
+</div>
 
-      <div style="margin-top:12px; color:var(--muted); font-size:13px;">
-        Webb: www.yasmine.nu
-      </div>
-    </div>
-  </div>
+<div style="margin-top:12px; color:var(--muted); font-size:13px;">
+Webb: www.yasmine.nu
+</div>
+</div>
+</div>
 
-  <div class="footer">
-    <div class="wrap">
-      <strong style="color:rgba(238,247,242,.92)">Yasmine’s Trädgårdsavfall och Skräp</strong><br>
-      Bortforsling, trädgårdsavfall, förrådstömning, dödsbo-rensning samt fällning av små träd och fruktträd.<br>
-      Telefon: <a href="tel:0768528512">0768528512</a> • SMS: <a href="sms:0768528512">Skicka bild för offert</a> • Mejl: <a href="mailto:yasminesavfall@gmail.com">yasminesavfall@gmail.com</a>
-    </div>
-  </div>
+<div class="footer">
+<div class="wrap">
+<strong style="color:rgba(238,247,242,.92)">Yasmine’s Trädgårdsavfall och Skräp</strong><br>
+Bortforsling, trädgårdsavfall, förrådstömning samt fällning av små träd och fruktträd.<br>
+<strong>Observera:</strong> Vi hanterar inte farligt avfall.<br>
+Telefon: <a href="tel:0768528512">0768528512</a> • SMS: <a href="sms:0768528512">Skicka bild för offert</a> • Mejl: <a href="mailto:yasminesavfall@gmail.com">yasminesavfall@gmail.com</a>
+</div>
+</div>
 
 </body>
 </html>
