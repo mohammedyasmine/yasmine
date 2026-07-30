@@ -1,956 +1,2278 @@
 <!doctype html>
 <html lang="sv">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QF8TT9HHHC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QF8TT9HHHC');
-</script>
-
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Yasmine’s Trädgårdsavfall och Skräp | Bortforsling i Helsingborg & nordvästra Skåne</title>
-<meta name="description" content="Bortforsling av trädgårdsavfall, skräp, möbler, grovsopor, förrådstömning samt fällning av små träd och fruktträd. Tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall. Vi hanterar inte farligt avfall eller bygg- och rivningsavfall. Snabb offert via SMS." />
-<meta property="og:title" content="Yasmine’s Trädgårdsavfall och Skräp" />
-<meta property="og:description" content="Bortforsling • Trädgårdsavfall • Förrådstömning • Små träd & fruktträd • F-skatt • Tillstånd från Länsstyrelsen • Ej farligt avfall" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="hero.jpg" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-:root{
---bg:#07130f;
---surface:#0b1b14;
---card:#0e231b;
---text:#eef7f2;
---muted:rgba(238,247,242,.78);
---line:rgba(255,255,255,.05);
---green:#22c55e;
---green2:#34d399;
---accent:#a7f3d0;
---shadow:0 20px 60px rgba(0,0,0,.42);
---radius:18px;
---max:1120px;
-}
-
-*{
-box-sizing:border-box;
-transition:background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .18s ease, opacity .25s ease;
-}
-
-html{scroll-behavior:smooth}
-html,body{height:100%}
-
-body{
-margin:0;
-font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-background:
-radial-gradient(1200px 800px at 10% -8%, rgba(52,211,153,.14), transparent 72%),
-radial-gradient(1000px 700px at 92% 8%, rgba(34,197,94,.11), transparent 68%),
-linear-gradient(180deg, #07130f 0%, #06110c 42%, #050d09 76%, #040b07 100%);
-background-attachment:fixed;
-color:var(--text);
-}
-
-body::before{
-content:"";
-position:fixed;
-inset:0;
-pointer-events:none;
-z-index:-1;
-background:
-linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,0) 18%, rgba(255,255,255,.012) 55%, rgba(255,255,255,0));
-}
-
-a{color:inherit; text-decoration:none}
-
-.wrap{
-max-width:var(--max);
-margin:0 auto;
-padding:0 18px;
-}
-
-.top{
-padding:18px 0;
-border-bottom:1px solid rgba(255,255,255,.045);
-position:sticky;
-top:0;
-backdrop-filter:blur(14px);
-background:linear-gradient(180deg, rgba(7,19,15,.78), rgba(7,19,15,.58));
-z-index:100;
-}
-
-.nav{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:14px;
-flex-wrap:wrap;
-}
-
-.brand{
-display:flex;
-align-items:center;
-gap:12px;
-min-width:0;
-}
-
-.logo{
-width:48px;
-height:48px;
-border-radius:14px;
-background:rgba(255,255,255,.045);
-border:1px solid rgba(255,255,255,.07);
-overflow:hidden;
-display:flex;
-align-items:center;
-justify-content:center;
-flex:0 0 auto;
-}
-
-.logo img{
-width:100%;
-height:100%;
-object-fit:contain;
-padding:7px;
-}
-
-.brand .text{
-line-height:1.1;
-min-width:0;
-}
-
-.brand strong{
-display:block;
-font-size:14px;
-letter-spacing:.2px;
-}
-
-.brand span{
-display:block;
-font-size:12px;
-color:var(--muted);
-margin-top:3px;
-}
-
-.navlinks{
-display:flex;
-gap:14px;
-flex-wrap:wrap;
-align-items:center;
-}
-
-.navlinks a{
-font-size:13px;
-color:var(--muted);
-}
-
-.navlinks a:hover{color:var(--text)}
-
-.cta{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-}
-
-.btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-padding:11px 15px;
-border-radius:14px;
-font-weight:800;
-border:1px solid rgba(255,255,255,.08);
-background:rgba(255,255,255,.04);
-color:var(--text);
-white-space:nowrap;
-}
-
-.btn.primary{
-background:linear-gradient(135deg, var(--green), var(--green2));
-border:0;
-color:#062012;
-box-shadow:0 20px 40px rgba(34,197,94,.15);
-}
-
-.btn:hover{transform:translateY(-1px)}
-.btn:active{transform:translateY(0)}
-.btn.full{width:100%}
-
-.hero{
-padding:44px 0 24px;
-position:relative;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-left:0;
-right:0;
-bottom:-70px;
-height:140px;
-pointer-events:none;
-background:linear-gradient(180deg, rgba(7,19,15,0), rgba(7,19,15,.18) 48%, rgba(7,19,15,0));
-z-index:-1;
-}
-
-.hero-grid{
-display:grid;
-grid-template-columns:1.15fr 0.85fr;
-gap:18px;
-align-items:stretch;
-}
-
-.hero-card{
-background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
-border:1px solid rgba(255,255,255,.06);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-padding:28px;
-overflow:hidden;
-position:relative;
-backdrop-filter:blur(6px);
-}
-
-.eyebrow{
-display:inline-flex;
-align-items:center;
-gap:8px;
-font-size:12px;
-font-weight:900;
-color:var(--accent);
-padding:8px 10px;
-border-radius:999px;
-border:1px solid rgba(167,243,208,.14);
-background:rgba(52,211,153,.08);
-margin-bottom:14px;
-}
-
-.hero h1{
-margin:0 0 12px;
-font-size:clamp(30px, 4.4vw, 50px);
-line-height:1.04;
-letter-spacing:-.03em;
-max-width:12ch;
-}
-
-.hero p{
-margin:0 0 18px;
-color:var(--muted);
-font-size:16px;
-line-height:1.68;
-max-width:60ch;
-}
-
-.badges{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin:16px 0 18px;
-}
-
-.badge{
-font-size:12px;
-font-weight:900;
-padding:8px 10px;
-border-radius:999px;
-border:1px solid rgba(255,255,255,.08);
-background:rgba(255,255,255,.04);
-color:rgba(238,247,242,.88);
-}
-
-.hero-actions{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:6px;
-}
-
-.hero-note{
-margin-top:12px;
-color:var(--muted);
-font-size:13px;
-line-height:1.5;
-}
-
-.side-card{
-background:linear-gradient(180deg, rgba(14,35,27,.58), rgba(14,35,27,.42));
-border:1px solid rgba(255,255,255,.06);
-border-radius:var(--radius);
-overflow:hidden;
-box-shadow:var(--shadow);
-display:flex;
-flex-direction:column;
-backdrop-filter:blur(6px);
-}
-
-.hero-img{
-position:relative;
-min-height:290px;
-background:#000;
-}
-
-.hero-img img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-filter:contrast(1.01) saturate(1.02);
-opacity:.95;
-}
-
-.mini{
-padding:18px;
-}
-
-.mini h3{
-margin:0 0 8px;
-font-size:17px;
-}
-
-.mini p{
-margin:0;
-color:var(--muted);
-font-size:13px;
-line-height:1.6;
-}
-
-.mini .mini-row{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:14px;
-}
-
-.section{
-padding:28px 0;
-position:relative;
-isolation:isolate;
-}
-
-.section::before{
-content:"";
-position:absolute;
-top:-52px;
-left:0;
-right:0;
-height:104px;
-pointer-events:none;
-background:linear-gradient(180deg, rgba(7,19,15,0), rgba(7,19,15,.12) 52%, rgba(7,19,15,0));
-z-index:-1;
-}
-
-.section h2{
-margin:0 0 12px;
-font-size:24px;
-letter-spacing:-.01em;
-}
-
-.section .lead{
-margin:0 0 18px;
-color:var(--muted);
-line-height:1.65;
-max-width:70ch;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(3, minmax(0,1fr));
-gap:12px;
-}
-
-.card{
-background:linear-gradient(180deg, rgba(14,35,27,.52), rgba(14,35,27,.34));
-border:1px solid rgba(255,255,255,.055);
-border-radius:var(--radius);
-padding:18px;
-box-shadow:0 22px 50px rgba(0,0,0,.24);
-text-align:left;
-backdrop-filter:blur(6px);
-}
-
-.card .t{
-font-weight:900;
-margin-bottom:7px;
-font-size:15px;
-}
-
-.card .d{
-color:var(--muted);
-font-size:13px;
-line-height:1.65;
-}
-
-.trust{
-display:grid;
-grid-template-columns:repeat(4, minmax(0,1fr));
-gap:12px;
-}
-
-.trust .card{
-padding:16px;
-}
-
-.how{
-display:grid;
-grid-template-columns:repeat(3, minmax(0,1fr));
-gap:12px;
-}
-
-.step{
-background:linear-gradient(180deg, rgba(255,255,255,.032), rgba(255,255,255,.016));
-border:1px solid rgba(255,255,255,.055);
-border-radius:var(--radius);
-padding:18px;
-text-align:left;
-box-shadow:0 18px 45px rgba(0,0,0,.20);
-backdrop-filter:blur(6px);
-}
-
-.num{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-width:30px;
-height:30px;
-border-radius:10px;
-background:rgba(52,211,153,.14);
-border:1px solid rgba(52,211,153,.16);
-font-weight:900;
-color:var(--accent);
-margin-bottom:10px;
-}
-
-.step-title{
-font-weight:900;
-margin-bottom:6px;
-}
-
-.step .d{
-color:var(--muted);
-font-size:13px;
-line-height:1.6;
-}
-
-.areas{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-}
-
-.chip{
-font-size:13px;
-font-weight:900;
-padding:10px 12px;
-border-radius:999px;
-border:1px solid rgba(255,255,255,.08);
-background:rgba(255,255,255,.04);
-color:rgba(238,247,242,.92);
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(4, minmax(0,1fr));
-gap:12px;
-}
-
-.gallery img{
-width:100%;
-aspect-ratio:4/3;
-object-fit:cover;
-border-radius:var(--radius);
-border:1px solid rgba(255,255,255,.055);
-box-shadow:0 18px 45px rgba(0,0,0,.26);
-background:#000;
-filter:contrast(1.01) saturate(1.02);
-opacity:.96;
-}
-
-.contact{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-align-items:start;
-}
-
-.panel{
-background:linear-gradient(180deg, rgba(14,35,27,.52), rgba(14,35,27,.34));
-border:1px solid rgba(255,255,255,.055);
-border-radius:var(--radius);
-padding:18px;
-box-shadow:0 22px 50px rgba(0,0,0,.24);
-text-align:left;
-backdrop-filter:blur(6px);
-}
-
-.panel h3{
-margin:0 0 10px;
-font-size:17px;
-}
-
-.panel p{
-margin:0 0 12px;
-color:var(--muted);
-font-size:13px;
-line-height:1.6;
-}
-
-.faq{
-display:grid;
-gap:12px;
-}
-
-.faq-item{
-background:linear-gradient(180deg, rgba(14,35,27,.52), rgba(14,35,27,.34));
-border:1px solid rgba(255,255,255,.055);
-border-radius:var(--radius);
-padding:18px;
-box-shadow:0 18px 45px rgba(0,0,0,.20);
-backdrop-filter:blur(6px);
-}
-
-.faq-item h3{
-margin:0 0 8px;
-font-size:16px;
-}
-
-.faq-item p{
-margin:0;
-color:var(--muted);
-font-size:13px;
-line-height:1.65;
-}
-
-.footer{
-padding:22px 0 34px;
-border-top:1px solid rgba(255,255,255,.045);
-color:var(--muted);
-font-size:13px;
-margin-top:10px;
-background:linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.012));
-}
-
-@media (max-width:980px){
-.hero-grid{grid-template-columns:1fr}
-.grid{grid-template-columns:repeat(2, minmax(0,1fr))}
-.trust{grid-template-columns:repeat(2, minmax(0,1fr))}
-.how{grid-template-columns:1fr}
-.gallery{grid-template-columns:repeat(2, minmax(0,1fr))}
-.contact{grid-template-columns:1fr}
-.navlinks{display:none}
-.hero h1{max-width:100%}
-}
-
-@media (max-width:640px){
-.grid{grid-template-columns:1fr}
-.trust{grid-template-columns:1fr}
-.gallery{grid-template-columns:1fr}
-.hero-card,.panel,.card,.step,.faq-item{padding:16px}
-.btn{width:100%}
-.hero-actions{flex-direction:column}
-.mini .mini-row{flex-direction:column}
-}
-</style>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"Yasmine’s Trädgårdsavfall och Skräp",
-"url":"https://www.yasmine.nu",
-"telephone":"+46768528512",
-"email":"yasminesavfall@gmail.com",
-"areaServed":[
-"Helsingborg",
-"Nordvästra Skåne",
-"Närliggande kommuner"
-],
-"serviceType":[
-"Bortforsling",
-"Trädgårdsavfall",
-"Förrådstömning",
-"Möbler och grovsopor",
-"Fällning av små träd",
-"Fällning av fruktträd",
-"Yrkesmässig transport av icke-farligt avfall"
-],
-"image":[
-"hero.jpg",
-"before1.jpg",
-"after1.jpg",
-"before2.jpg",
-"after2.jpg"
-]
-}
-</script>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"FAQPage",
-"mainEntity":[
-{
-"@type":"Question",
-"name":"Hur får jag offert?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Det snabbaste är att skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med pris och tid."
-}
-},
-{
-"@type":"Question",
-"name":"Hjälper ni även med små träd och fruktträd?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Ja, vi hjälper även till att fälla små träd och fruktträd. Vi kan också ta hand om bortforslingen efteråt."
-}
-},
-{
-"@type":"Question",
-"name":"Hanterar ni farligt avfall?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Nej, vi hanterar inte farligt avfall som kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller andra miljöfarliga material. Vi hanterar inte heller bygg- och rivningsavfall."
-}
-},
-{
-"@type":"Question",
-"name":"Har ni tillstånd för avfallstransport?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Ja, Yasmine’s Trädgårdsavfall och Skräp har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall. Tillståndet gäller till 2029."
-}
-},
-{
-"@type":"Question",
-"name":"Vilka områden hjälper ni i?",
-"acceptedAnswer":{
-"@type":"Answer",
-"text":"Vi utgår från Helsingborg och hjälper kunder i närliggande kommuner och hela nordvästra Skåne."
-}
-}
-]
-}
-</script>
+  <!-- Google Analytics – samma mät-ID som på den tidigare sidan -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF8TT9HHHC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QF8TT9HHHC");
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06412f">
+  <meta name="robots" content="index, follow">
+
+  <title>Bortforsling & trädfällning i Helsingborg | Yasmine’s</title>
+  <meta name="description" content="Bortforsling, förrådstömning, trädgårdsavfall och fällning av mindre träd i Helsingborg och nordvästra Skåne. Skicka en bild via SMS för snabb offert.">
+  <link rel="canonical" href="https://www.yasmine.nu/">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yasmine’s Trädgårdsavfall och Skräp">
+  <meta property="og:description" content="Snabb och smidig hjälp med bortforsling, tömning, trädgårdsavfall och mindre trädfällning i Helsingborg med omnejd.">
+  <meta property="og:url" content="https://www.yasmine.nu/">
+  <meta property="og:image" content="https://www.yasmine.nu/hero.jpg">
+  <meta property="og:image:alt" content="Yasmine’s servicebil och släp under ett uppdrag">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" href="hero.jpg" as="image" fetchpriority="high">
+
+  <style>
+    :root {
+      --forest-950: #032c20;
+      --forest-900: #06412f;
+      --forest-800: #0b533b;
+      --forest-700: #116345;
+      --leaf: #62bd2d;
+      --leaf-dark: #3e9820;
+      --gold: #f7b83f;
+      --gold-soft: #fff1d2;
+      --cream: #f7f8f3;
+      --mist: #edf4e9;
+      --white: #ffffff;
+      --ink: #11261e;
+      --muted: #587066;
+      --line: #d9e5db;
+      --shadow-sm: 0 10px 30px rgba(3, 44, 32, 0.08);
+      --shadow-lg: 0 28px 70px rgba(3, 44, 32, 0.18);
+      --radius-sm: 14px;
+      --radius-md: 22px;
+      --radius-lg: 34px;
+      --max: 1180px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 98px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--cream);
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 9999;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: var(--white);
+      color: var(--forest-950);
+      font-weight: 800;
+      transform: translateY(-160%);
+      transition: transform 0.2s ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 104px 0;
+    }
+
+    .section-soft {
+      background: var(--mist);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--forest-700);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-light {
+      color: var(--gold);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.1;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      color: var(--white);
+      font-size: clamp(2.55rem, 6vw, 5.35rem);
+      font-weight: 900;
+      letter-spacing: -0.052em;
+      max-width: 10ch;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      font-weight: 900;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .section-head {
+      max-width: 730px;
+      margin-bottom: 48px;
+    }
+
+    .section-head.center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.75;
+    }
+
+    .btn {
+      min-height: 54px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border: 2px solid transparent;
+      border-radius: 13px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn::after {
+      content: "→";
+      font-size: 1.1em;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover::after {
+      transform: translateX(3px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--forest-950);
+      box-shadow: 0 14px 30px rgba(247, 184, 63, 0.2);
+    }
+
+    .btn-gold:hover {
+      background: #ffc44f;
+      box-shadow: 0 18px 34px rgba(247, 184, 63, 0.28);
+    }
+
+    .btn-light {
+      border-color: rgba(255, 255, 255, 0.32);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+    }
+
+    .btn-light:hover {
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .btn-forest {
+      background: var(--forest-900);
+      color: var(--white);
+      box-shadow: 0 14px 30px rgba(3, 44, 32, 0.16);
+    }
+
+    .btn-forest:hover {
+      background: var(--forest-800);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(3, 44, 32, 0.94);
+      color: var(--white);
+      backdrop-filter: blur(16px);
+    }
+
+    .header-inner {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .brand-logo {
+      width: 58px;
+      height: 58px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+    }
+
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 5px;
+    }
+
+    .brand-copy {
+      min-width: 0;
+    }
+
+    .brand-name {
+      display: block;
+      overflow: hidden;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.92rem;
+      font-weight: 800;
+      line-height: 1.15;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .brand-place {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.76rem;
+      font-weight: 600;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .desktop-nav > a:not(.header-cta) {
+      position: relative;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .desktop-nav > a:not(.header-cta)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+      left: 0;
+      height: 2px;
+      border-radius: 4px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: transform 0.2s ease;
+    }
+
+    .desktop-nav > a:not(.header-cta):hover {
+      color: var(--white);
+    }
+
+    .desktop-nav > a:not(.header-cta):hover::after {
+      transform: scaleX(1);
+    }
+
+    .header-cta {
+      min-height: 46px;
+      padding: 11px 16px;
+      border-radius: 11px;
+      background: var(--gold);
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 900;
+    }
+
+    .menu-button {
+      width: 48px;
+      height: 48px;
+      display: none;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+    }
+
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after {
+      width: 21px;
+      height: 2px;
+      display: block;
+      border-radius: 3px;
+      background: currentColor;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .menu-icon {
+      position: relative;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    .menu-icon::before {
+      top: -7px;
+    }
+
+    .menu-icon::after {
+      top: 7px;
+    }
+
+    .menu-button[aria-expanded="true"] .menu-icon {
+      background: transparent;
+    }
+
+    .menu-button[aria-expanded="true"] .menu-icon::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .menu-button[aria-expanded="true"] .menu-icon::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--forest-900);
+      color: var(--white);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 520px;
+      height: 520px;
+      top: -340px;
+      right: -80px;
+      background: rgba(98, 189, 45, 0.12);
+    }
+
+    .hero::after {
+      width: 420px;
+      height: 420px;
+      right: -230px;
+      bottom: -210px;
+      border: 70px solid rgba(98, 189, 45, 0.1);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      min-height: 720px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(380px, 0.96fr);
+      align-items: center;
+      gap: 72px;
+      padding: 82px 0 92px;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+    }
+
+    .hero-text {
+      max-width: 610px;
+      margin: 0 0 30px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: clamp(1.05rem, 1.8vw, 1.24rem);
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .offer-tip {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin: 23px 0 0;
+      color: rgba(255, 255, 255, 0.73);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .offer-tip::before {
+      content: "✓";
+      width: 26px;
+      height: 26px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--leaf);
+      color: var(--forest-950);
+      font-weight: 900;
+    }
+
+    .hero-visual {
+      position: relative;
+      padding: 0 18px 24px 0;
+    }
+
+    .hero-image-frame {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 4.65;
+      border: 10px solid var(--white);
+      border-radius: 28px;
+      background: var(--white);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-visual::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+      width: 76%;
+      height: 78%;
+      border-radius: 26px;
+      background: var(--gold);
+    }
+
+    .hero-card {
+      position: absolute;
+      left: -44px;
+      bottom: 4px;
+      width: min(300px, 72%);
+      padding: 19px 20px;
+      border: 1px solid rgba(3, 44, 32, 0.08);
+      border-left: 7px solid var(--gold);
+      border-radius: 16px;
+      background: var(--white);
+      color: var(--ink);
+      box-shadow: 0 20px 45px rgba(3, 44, 32, 0.2);
+    }
+
+    .hero-card strong {
+      display: block;
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.98rem;
+      line-height: 1.35;
+    }
+
+    .hero-card span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .trust-strip {
+      position: relative;
+      z-index: 4;
+      margin-top: -32px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .trust-item {
+      min-height: 106px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 22px 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-check {
+      width: 34px;
+      height: 34px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--leaf);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.86rem;
+      line-height: 1.35;
+    }
+
+    .trust-item span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .service-card {
+      position: relative;
+      min-height: 286px;
+      padding: 30px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .service-card:hover {
+      border-color: #bed5c3;
+      box-shadow: 0 20px 45px rgba(3, 44, 32, 0.12);
+      transform: translateY(-5px);
+    }
+
+    .service-number {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 50px;
+      border-radius: 14px;
+      background: var(--mist);
+      color: var(--forest-700);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 900;
+    }
+
+    .service-card:nth-child(2) .service-number,
+    .service-card:nth-child(5) .service-number {
+      background: var(--gold-soft);
+      color: #825400;
+    }
+
+    .service-card:nth-child(3) .service-number,
+    .service-card:nth-child(6) .service-number {
+      background: #e8f6df;
+      color: var(--leaf-dark);
+    }
+
+    .service-card h3 {
+      margin-bottom: 11px;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.7;
+    }
+
+    .tree-feature {
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      border-radius: var(--radius-lg);
+      background: var(--forest-900);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .tree-feature-copy {
+      padding: 60px;
+      color: var(--white);
+    }
+
+    .tree-feature h2 {
+      max-width: 12ch;
+      color: var(--white);
+    }
+
+    .tree-feature p {
+      max-width: 600px;
+      margin: 0 0 24px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 13px;
+      margin: 26px 0 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      width: 23px;
+      height: 23px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      margin-top: 1px;
+      border-radius: 50%;
+      background: var(--leaf);
+      color: var(--forest-950);
+      font-size: 0.76rem;
+      font-weight: 900;
+    }
+
+    .tree-feature-image {
+      min-height: 540px;
+      position: relative;
+    }
+
+    .tree-feature-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .tree-feature-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(6, 65, 47, 0.32), transparent 45%);
+    }
+
+    .process-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .process-grid::before {
+      content: "";
+      position: absolute;
+      top: 34px;
+      right: 15%;
+      left: 15%;
+      height: 2px;
+      background: var(--line);
+    }
+
+    .process-card {
+      position: relative;
+      z-index: 1;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .process-number {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 24px;
+      border: 8px solid var(--cream);
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      font-weight: 900;
+      box-shadow: 0 0 0 1px var(--line);
+    }
+
+    .process-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .result-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .result-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+      background: var(--forest-900);
+    }
+
+    .result-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      background: #dce6dc;
+    }
+
+    .result-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .result-card:hover .result-image img {
+      transform: scale(1.035);
+    }
+
+    .result-label {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(3, 44, 32, 0.9);
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      backdrop-filter: blur(6px);
+    }
+
+    .result-image:last-child .result-label {
+      background: var(--gold);
+      color: var(--forest-950);
+    }
+
+    .result-copy {
+      padding: 24px;
+    }
+
+    .result-copy h3 {
+      margin-bottom: 7px;
+    }
+
+    .result-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .business-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      border-radius: var(--radius-lg);
+      background: var(--gold-soft);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .business-card::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      bottom: -90px;
+      width: 280px;
+      height: 280px;
+      border: 55px solid rgba(247, 184, 63, 0.25);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .business-copy {
+      position: relative;
+      z-index: 1;
+      padding: 60px;
+    }
+
+    .business-copy h2 {
+      max-width: 13ch;
+    }
+
+    .business-copy > p {
+      max-width: 620px;
+      margin: 0;
+      color: #52645d;
+      font-size: 1.04rem;
+    }
+
+    .business-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 18px;
+      margin: 28px 0 32px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .business-list li {
+      display: flex;
+      gap: 10px;
+      color: var(--forest-950);
+      font-weight: 700;
+    }
+
+    .business-list li::before {
+      content: "✓";
+      color: var(--leaf-dark);
+      font-weight: 900;
+    }
+
+    .business-aside {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      padding: 44px;
+    }
+
+    .business-note {
+      width: 100%;
+      padding: 34px;
+      border-radius: 22px;
+      background: var(--white);
+      box-shadow: 0 18px 45px rgba(3, 44, 32, 0.11);
+    }
+
+    .business-note .note-label {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: var(--mist);
+      color: var(--forest-700);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.68rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .business-note h3 {
+      margin-bottom: 10px;
+      font-size: 1.35rem;
+    }
+
+    .business-note p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .areas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 11px;
+      margin-top: 32px;
+    }
+
+    .area {
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--forest-800);
+      font-weight: 800;
+      box-shadow: 0 5px 16px rgba(3, 44, 32, 0.05);
+    }
+
+    .review-link-card {
+      max-width: 880px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 22px;
+      margin: 42px auto 0;
+      padding: 25px 28px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .google-label {
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: var(--mist);
+      color: var(--forest-800);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .review-link-card strong {
+      display: block;
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.98rem;
+    }
+
+    .review-link-card span:not(.stars) {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .text-link {
+      color: var(--forest-700);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.82rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .text-link:hover {
+      color: var(--forest-950);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .faq-list {
+      max-width: 880px;
+      display: grid;
+      gap: 12px;
+      margin-inline: auto;
+    }
+
+    .faq-item {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: 0 8px 24px rgba(3, 44, 32, 0.05);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 22px 64px 22px 24px;
+      color: var(--forest-950);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.98rem;
+      font-weight: 800;
+      line-height: 1.4;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--mist);
+      color: var(--forest-800);
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      transform: translateY(-50%);
+    }
+
+    .faq-item[open] summary::after {
+      content: "–";
+      background: var(--gold-soft);
+    }
+
+    .faq-answer {
+      padding: 0 24px 23px;
+      color: var(--muted);
+    }
+
+    .faq-answer p {
+      margin: 0;
+    }
+
+    .contact-section {
+      padding: 104px 0 0;
+      background: var(--forest-900);
+      color: var(--white);
+    }
+
+    .contact-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      padding: 62px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.045);
+    }
+
+    .contact-card::after {
+      content: "";
+      position: absolute;
+      right: -130px;
+      bottom: -180px;
+      width: 420px;
+      height: 420px;
+      border: 70px solid rgba(98, 189, 45, 0.09);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .contact-card h2 {
+      max-width: 12ch;
+      color: var(--white);
+    }
+
+    .contact-intro {
+      max-width: 610px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 1.08rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .contact-details {
+      position: relative;
+      z-index: 1;
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+      gap: 12px;
+    }
+
+    .contact-row {
+      padding: 18px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.055);
+    }
+
+    .contact-row span {
+      display: block;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .contact-row a,
+    .contact-row strong {
+      display: inline-block;
+      margin-top: 3px;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      word-break: break-word;
+    }
+
+    .contact-row a:hover {
+      color: var(--gold);
+    }
+
+    .site-footer {
+      padding: 58px 0 96px;
+      background: var(--forest-900);
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr 0.8fr;
+      gap: 50px;
+      padding-top: 50px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .footer-brand img {
+      width: 60px;
+      height: 60px;
+      padding: 4px;
+      border-radius: 15px;
+      background: var(--white);
+      object-fit: contain;
+    }
+
+    .footer-brand strong {
+      display: block;
+      color: var(--white);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.94rem;
+      line-height: 1.35;
+    }
+
+    .footer-about {
+      max-width: 450px;
+      margin: 17px 0 0;
+      font-size: 0.86rem;
+    }
+
+    .footer-title {
+      margin: 0 0 14px;
+      color: var(--gold);
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.73rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+      font-size: 0.88rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .legal-note {
+      margin: 36px 0 0;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.09);
+      font-size: 0.79rem;
+      line-height: 1.7;
+    }
+
+    .mobile-actions {
+      display: none;
+    }
+
+    .menu-open .mobile-actions {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    @media (max-width: 1080px) {
+      .desktop-nav {
+        gap: 18px;
+      }
+
+      .desktop-nav > a:not(.header-cta) {
+        display: none;
+      }
+
+      .hero-grid {
+        gap: 50px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .trust-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .section {
+        padding: 82px 0;
+      }
+
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-button {
+        display: grid;
+      }
+
+      .mobile-menu {
+        position: fixed;
+        inset: 86px 0 0;
+        z-index: 999;
+        display: block;
+        padding: 22px 20px 130px;
+        overflow-y: auto;
+        background: var(--forest-950);
+        color: var(--white);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-12px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .mobile-menu.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      .mobile-menu nav {
+        display: grid;
+      }
+
+      .mobile-menu nav > a:not(.btn) {
+        padding: 18px 2px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.05rem;
+        font-weight: 800;
+      }
+
+      .mobile-menu .btn {
+        margin-top: 22px;
+      }
+
+      .hero-grid {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 58px;
+        padding: 72px 0 96px;
+      }
+
+      .hero-copy {
+        max-width: 740px;
+      }
+
+      h1 {
+        max-width: 11ch;
+      }
+
+      .hero-visual {
+        width: min(570px, 94%);
+        margin-inline: auto;
+      }
+
+      .hero-image-frame {
+        aspect-ratio: 5 / 4;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .tree-feature,
+      .business-card,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .tree-feature-image {
+        min-height: 420px;
+        order: -1;
+      }
+
+      .tree-feature-image::after {
+        background: linear-gradient(0deg, rgba(6, 65, 47, 0.28), transparent 50%);
+      }
+
+      .tree-feature-copy,
+      .business-copy {
+        padding: 46px;
+      }
+
+      .business-aside {
+        padding: 0 46px 46px;
+      }
+
+      .contact-card {
+        padding: 46px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-main {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 660px) {
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .section-head {
+        margin-bottom: 34px;
+      }
+
+      h1 {
+        font-size: clamp(2.45rem, 13vw, 3.65rem);
+      }
+
+      h2 {
+        font-size: clamp(1.85rem, 9vw, 2.6rem);
+      }
+
+      .brand-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 13px;
+      }
+
+      .brand-name {
+        max-width: 205px;
+        font-size: 0.78rem;
+      }
+
+      .brand-place {
+        font-size: 0.68rem;
+      }
+
+      .header-inner {
+        min-height: 76px;
+      }
+
+      .mobile-menu {
+        inset: 76px 0 0;
+      }
+
+      .hero-grid {
+        padding: 59px 0 82px;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+      }
+
+      .hero-actions {
+        display: grid;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        width: 100%;
+        padding: 0 10px 18px 0;
+      }
+
+      .hero-image-frame {
+        aspect-ratio: 4 / 4.4;
+        border-width: 7px;
+        border-radius: 22px;
+      }
+
+      .hero-card {
+        left: 13px;
+        bottom: -8px;
+        width: calc(100% - 45px);
+      }
+
+      .trust-strip {
+        margin-top: -22px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item {
+        min-height: 88px;
+        padding: 17px 19px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .trust-item:nth-child(3) {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .trust-item:last-child {
+        border-bottom: 0;
+      }
+
+      .services-grid,
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: 0;
+        padding: 24px;
+      }
+
+      .service-number {
+        margin-bottom: 32px;
+      }
+
+      .tree-feature-copy,
+      .business-copy,
+      .contact-card {
+        padding: 34px 25px;
+      }
+
+      .tree-feature-image {
+        min-height: 320px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .process-grid::before {
+        display: none;
+      }
+
+      .process-card {
+        padding: 0 12px;
+      }
+
+      .process-number {
+        margin-bottom: 17px;
+      }
+
+      .business-list {
+        grid-template-columns: 1fr;
+      }
+
+      .business-aside {
+        padding: 0 25px 25px;
+      }
+
+      .business-note {
+        padding: 25px;
+      }
+
+      .review-link-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 22px;
+        text-align: center;
+      }
+
+      .contact-section {
+        padding-top: 70px;
+      }
+
+      .contact-actions {
+        display: grid;
+      }
+
+      .contact-actions .btn {
+        width: 100%;
+      }
+
+      .contact-details {
+        margin-top: 6px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-main {
+        grid-column: auto;
+      }
+
+      .site-footer {
+        padding-bottom: 118px;
+      }
+
+      .mobile-actions {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        z-index: 1100;
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 8px;
+        padding: 8px;
+        border: 1px solid rgba(3, 44, 32, 0.1);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 16px 40px rgba(3, 44, 32, 0.22);
+        backdrop-filter: blur(12px);
+      }
+
+      .mobile-actions a {
+        min-height: 48px;
+        display: grid;
+        place-items: center;
+        border-radius: 11px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.77rem;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .mobile-call {
+        background: var(--mist);
+        color: var(--forest-900);
+      }
+
+      .mobile-sms {
+        background: var(--gold);
+        color: var(--forest-950);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Yasmine’s Trädgårdsavfall och Skräp",
+    "url": "https://www.yasmine.nu/",
+    "image": "https://www.yasmine.nu/hero.jpg",
+    "logo": "https://www.yasmine.nu/logo.png",
+    "telephone": "+46768528512",
+    "email": "yasminesavfall@gmail.com",
+    "areaServed": [
+      "Helsingborg",
+      "Höganäs",
+      "Ängelholm",
+      "Bjuv",
+      "Åstorp",
+      "Nordvästra Skåne"
+    ],
+    "priceRange": "Offert",
+    "sameAs": [
+      "https://www.facebook.com/p/Yasmines-tr%C3%A4dg%C3%A5rdsavfall-och-skr%C3%A4p-61566173922771/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tjänster",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bortforsling av trädgårdsavfall"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fällning av mindre träd och fruktträd"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Förråds- och bostadstömning"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bortforsling av möbler och grovavfall"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hur får jag en offert?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Skicka ett SMS med bild, ort och ungefärlig mängd. Yasmine’s återkommer med prisförslag och en tid som passar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hjälper ni till med trädfällning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Yasmine’s hjälper till med fällning av mindre träd och fruktträd samt kapning och bortforsling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Har ni tillstånd för avfallstransport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Yasmine’s har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall. Tillståndet gäller till 2029."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hanterar ni farligt avfall eller bygg- och rivningsavfall?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej. Yasmine’s hanterar inte farligt avfall eller bygg- och rivningsavfall."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Hoppa till innehållet</a>
 
-<div class="top">
-<div class="wrap">
-<div class="nav">
-<div class="brand">
-<div class="logo">
-<img src="logo.png" alt="Yasmine’s Trädgårdsavfall och Skräp">
-</div>
-<div class="text">
-<strong>Yasmine’s Trädgårdsavfall och Skräp</strong>
-<span>Snabb offert • Smidig hämtning • Helsingborg & nordvästra Skåne</span>
-</div>
-</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Yasmine’s – startsida">
+        <span class="brand-logo">
+          <img src="logo.png" alt="" width="1024" height="1024">
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Yasmine’s Trädgårdsavfall och Skräp</span>
+          <span class="brand-place">Helsingborg & nordvästra Skåne</span>
+        </span>
+      </a>
 
-<div class="navlinks">
-<a href="#tjanster">Tjänster</a>
-<a href="#varfor-oss">Varför oss</a>
-<a href="#sa-funkar-det">Så funkar det</a>
-<a href="#omraden">Områden</a>
-<a href="#fore-efter">Före/efter</a>
-<a href="#faq">Frågor</a>
-<a href="#kontakt">Kontakt</a>
-</div>
+      <nav class="desktop-nav" aria-label="Huvudmeny">
+        <a href="#tjanster">Tjänster</a>
+        <a href="#resultat">Före & efter</a>
+        <a href="#foretag">För företag</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="header-cta" href="sms:+46768528512">Få snabb offert</a>
+      </nav>
 
-<div class="cta">
-<a class="btn primary" href="tel:0768528512">📞 Ring</a>
-<a class="btn" href="sms:0768528512">💬 SMS offert</a>
-</div>
-</div>
-</div>
-</div>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Öppna menyn">
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+    </div>
 
-<div class="hero">
-<div class="wrap">
-<div class="hero-grid">
+  </header>
 
-<div class="hero-card">
-<div class="eyebrow">✅ Snabb offert via SMS</div>
-<h1>Bortforsling, trädgårdsavfall och små träd – snabbt och smidigt</h1>
-<p>
-Vi hjälper privatpersoner och företag med <strong>bortforsling av skräp</strong>,
-<strong>trädgårdsavfall</strong>, <strong>möbler och grovsopor</strong>,
-<strong>förrådstömning</strong> samt <strong>fällning av små träd och fruktträd</strong>.
-Vi har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall.
-Vi hanterar inte farligt avfall eller bygg- och rivningsavfall. Skicka en bild via SMS så återkommer vi snabbt med prisförslag.
-</p>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobilmeny">
+      <a href="#tjanster">Tjänster</a>
+      <a href="#sa-funkar-det">Så funkar det</a>
+      <a href="#resultat">Före & efter</a>
+      <a href="#foretag">För företag</a>
+      <a href="#fragor">Vanliga frågor</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-gold" href="sms:+46768528512">Skicka bild via SMS</a>
+    </nav>
+  </div>
 
-<div class="badges">
-<div class="badge">✅ F-skatt</div>
-<div class="badge">✅ Tillstånd från Länsstyrelsen</div>
-<div class="badge">✅ Snabb respons</div>
-<div class="badge">✅ Tydlig offert</div>
-<div class="badge">✅ Smidig hämtning</div>
-<div class="badge">✅ Före/efter-bilder</div>
-<div class="badge">⚠️ Ej farligt avfall</div>
-</div>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light">Bortforsling i Helsingborg</p>
+          <h1>Vi tar hand om det du vill bli av med.</h1>
+          <p class="hero-text">
+            Snabb hjälp med trädgårdsavfall, möbler, förrådstömning och fällning av mindre träd. Du får ett tydligt pris och slipper både bärandet och bortforslingen.
+          </p>
 
-<div class="hero-actions">
-<a class="btn primary" href="sms:0768528512">💬 Skicka bild för offert</a>
-<a class="btn" href="tel:0768528512">📞 Ring 0768528512</a>
-</div>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="sms:+46768528512">Skicka bild via SMS</a>
+            <a class="btn btn-light" href="tel:+46768528512">Ring 076-852 85 12</a>
+          </div>
 
-<div class="hero-note">
-Snabbast går det om du skickar <strong>bild + ort + ungefärlig mängd</strong>.
-</div>
-</div>
+          <p class="offer-tip">Skicka bild + ort + ungefärlig mängd för snabbast offert.</p>
+        </div>
 
-<div class="side-card">
-<div class="hero-img">
-<img src="hero.jpg" alt="Yasmine’s – bil och släp vid uppdrag">
-</div>
-<div class="mini">
-<h3>Vi gör det enkelt för dig</h3>
-<p>
-Du skickar bild. Vi återkommer med pris och tid.
-Sedan hämtar vi – snabbt, tydligt och utan krångel.
-</p>
-<div class="mini-row">
-<a class="btn primary" href="sms:0768528512">💬 SMS nu</a>
-<a class="btn" href="#kontakt">📩 Kontakt</a>
-</div>
-</div>
-</div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="hero.jpg" alt="Yasmine’s servicebil och släp under ett uppdrag i Helsingborg" width="4032" height="3024" fetchpriority="high">
+          </div>
+          <div class="hero-card">
+            <strong>Snabb offert utan krångel</strong>
+            <span>Fast pris efter bilder eller kostnadsfri besiktning.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
-</div>
-</div>
+    <div class="trust-strip" aria-label="Trygghet och villkor">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-check" aria-hidden="true">✓</span>
+            <span>
+              <strong>F-skatt</strong>
+              <span>Ett registrerat och seriöst företag</span>
+            </span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-check" aria-hidden="true">✓</span>
+            <span>
+              <strong>Avfallstillstånd</strong>
+              <span>Tillstånd från Länsstyrelsen</span>
+            </span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-check" aria-hidden="true">✓</span>
+            <span>
+              <strong>Snabb respons</strong>
+              <span>Offert direkt efter bilder</span>
+            </span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-check" aria-hidden="true">✓</span>
+            <span>
+              <strong>Privat & företag</strong>
+              <span>Engångsjobb eller återkommande hjälp</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="section" id="tjanster">
-<div class="wrap">
-<h2>Våra tjänster</h2>
-<p class="lead">
-Vi hjälper till med både mindre och större jobb. Oavsett om det gäller några säckar trädgårdsavfall eller en större tömning får du en tydlig offert och smidig hjälp.
-</p>
+    <section class="section" id="tjanster">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Det här hjälper vi dig med</p>
+          <h2>Från första lyftet till sista körningen.</h2>
+          <p class="section-lead">
+            Du visar vad som ska tas bort. Vi planerar jobbet, bär, sorterar och kör bort det som ingår i offerten.
+          </p>
+        </div>
 
-<div class="grid">
-<div class="card">
-<div class="t">🌿 Trädgårdsavfall</div>
-<div class="d">Ris, grenar, löv, säckar och blandat trädgårdsavfall – vi hämtar och kör bort.</div>
-</div>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Trädgårdsavfall</h3>
+            <p>Ris, grenar, löv, häckklipp, säckar och annat trädgårdsavfall hämtas och körs bort.</p>
+          </article>
 
-<div class="card">
-<div class="t">🌳 Små träd & fruktträd</div>
-<div class="d">Vi hjälper även till att fälla små träd och fruktträd och kan självklart ta hand om bortforslingen efteråt.</div>
-</div>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Mindre trädfällning</h3>
+            <p>Fällning av mindre träd och fruktträd, kapning i hanterbara bitar och bortforsling efteråt.</p>
+          </article>
 
-<div class="card">
-<div class="t">🪑 Möbler & grovsopor</div>
-<div class="d">Bortforsling av möbler, grovsopor och sorterat skräp. Perfekt vid rensning, flytt eller städning.</div>
-</div>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Möbler & grovavfall</h3>
+            <p>Smidig bortforsling av möbler och annat skrymmande, icke-farligt avfall vid rensning eller flytt.</p>
+          </article>
 
-<div class="card">
-<div class="t">📦 Förrådstömning</div>
-<div class="d">Tömning av förråd, garage, källare och vind – snabbt, smidigt och tryggt.</div>
-</div>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Förrådstömning</h3>
+            <p>Vi tömmer förråd, garage, vindar och källare och lämnar utrymmet redo för nästa steg.</p>
+          </article>
 
-<div class="card">
-<div class="t">🚚 Bortforsling av skräp</div>
-<div class="d">Vi hjälper till med bortforsling av icke-farligt avfall i mindre omfattning – enkelt, snabbt och utan krångel.</div>
-</div>
+          <article class="service-card">
+            <span class="service-number">05</span>
+            <h3>Bostad & dödsbo</h3>
+            <p>Respektfull tömning av bostäder och dödsbon enligt familjens önskemål, med tydligt upplägg.</p>
+          </article>
 
-<div class="card">
-<div class="t">⚠️ Farligt avfall</div>
-<div class="d">Vi hanterar inte farligt avfall, till exempel kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller andra miljöfarliga material. Vi hanterar inte heller bygg- och rivningsavfall.</div>
-</div>
-</div>
-</div>
-</div>
+          <article class="service-card">
+            <span class="service-number">06</span>
+            <h3>Företag & fastigheter</h3>
+            <p>Tömning och bortforsling från lägenheter, lager, gemensamma utrymmen och verksamheter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div class="section" id="varfor-oss">
-<div class="wrap">
-<h2>Varför välja oss?</h2>
-<p class="lead">
-Vi fokuserar på att det ska vara enkelt för dig som kund. Snabb kontakt, tydlig offert och ett jobb som blir gjort ordentligt.
-</p>
+    <section class="section section-soft" aria-labelledby="tree-title">
+      <div class="container">
+        <div class="tree-feature">
+          <div class="tree-feature-copy">
+            <p class="eyebrow eyebrow-light">Trädfällning i Helsingborg</p>
+            <h2 id="tree-title">Behöver du fälla ett träd?</h2>
+            <p>Vi hjälper dig med mindre träd och fruktträd – från nedtagning till bortforsling.</p>
 
-<div class="trust">
-<div class="card">
-<div class="t">✅ Tydligt och enkelt</div>
-<div class="d">Du får snabbt veta pris och upplägg. Inget krångel, bara raka besked.</div>
-</div>
+            <ul class="check-list">
+              <li>Fällning av mindre träd och fruktträd</li>
+              <li>Kapning av stam och grenar i hanterbara bitar</li>
+              <li>Bortforsling av stam, grenar och ris</li>
+            </ul>
 
-<div class="card">
-<div class="t">✅ Riktigt företag</div>
-<div class="d">Vi arbetar seriöst och med F-skatt, så du vet vem du anlitar.</div>
-</div>
+            <a class="btn btn-gold" href="sms:+46768528512">Skicka en bild på trädet</a>
+          </div>
 
-<div class="card">
-<div class="t">✅ Tillstånd från Länsstyrelsen</div>
-<div class="d">Vi har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall, giltigt till 2029.</div>
-</div>
+          <div class="tree-feature-image">
+            <img src="after1.jpg" alt="Trädgårdsavfall lastat för bortforsling av Yasmine’s" width="4284" height="5712" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="card">
-<div class="t">✅ Du slipper tänka på allt</div>
-<div class="d">Vi hjälper till från första kontakt till hämtning och bortforsling.</div>
-</div>
-</div>
-</div>
-</div>
+    <section class="section" id="sa-funkar-det">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Enkelt från start till klart</p>
+          <h2>Så fungerar det.</h2>
+          <p class="section-lead">Tre enkla steg – sedan är jobbet gjort.</p>
+        </div>
 
-<div class="section" id="sa-funkar-det">
-<div class="wrap">
-<h2>Så funkar det</h2>
-<p class="lead">Det ska gå snabbt att få hjälp. Därför håller vi processen enkel.</p>
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="process-number">1</span>
+            <h3>Skicka en bild</h3>
+            <p>SMS:a bilder och skriv vilken ort det gäller samt ungefärlig mängd.</p>
+          </article>
 
-<div class="how">
-<div class="step">
-<div class="num">1</div>
-<div class="step-title">Skicka bild</div>
-<div class="d">SMSa en bild och skriv ort samt ungefärlig mängd.</div>
-</div>
+          <article class="process-card">
+            <span class="process-number">2</span>
+            <h3>Få pris & tid</h3>
+            <p>Du får ett tydligt prisförslag och vi bestämmer en tid som passar.</p>
+          </article>
 
-<div class="step">
-<div class="num">2</div>
-<div class="step-title">Få offert</div>
-<div class="d">Vi återkommer snabbt med prisförslag och tid som passar.</div>
-</div>
+          <article class="process-card">
+            <span class="process-number">3</span>
+            <h3>Vi tar hand om det</h3>
+            <p>Vi kommer ut, gör jobbet och kör bort det som ingår i offerten.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div class="step">
-<div class="num">3</div>
-<div class="step-title">Vi hämtar</div>
-<div class="d">Vi kommer ut och tar hand om jobbet – smidigt och klart.</div>
-</div>
-</div>
+    <section class="section section-soft" id="resultat">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Riktiga uppdrag</p>
+          <h2>Före & efter.</h2>
+          <p class="section-lead">Tydliga resultat från utförda jobb i Helsingborg med omnejd.</p>
+        </div>
 
-<div style="margin-top:14px;">
-<a class="btn primary" href="sms:0768528512">💬 Skicka bild för offert</a>
-</div>
-</div>
-</div>
+        <div class="results-grid">
+          <article class="result-card">
+            <div class="result-images">
+              <div class="result-image">
+                <img src="before1.jpg" alt="Före- och efterbild från rensning vid en fastighet" width="1280" height="1920" loading="lazy">
+                <span class="result-label">Resultat</span>
+              </div>
+              <div class="result-image">
+                <img src="after1.jpg" alt="Trädgårdsavfall lastat och klart för bortforsling" width="4284" height="5712" loading="lazy">
+                <span class="result-label">Bortforslat</span>
+              </div>
+            </div>
+            <div class="result-copy">
+              <h3>Rensning & bortforsling</h3>
+              <p>Utrymmet tömt och lämnat redo för nästa steg.</p>
+            </div>
+          </article>
 
-<div class="section" id="omraden">
-<div class="wrap">
-<h2>Områden vi hjälper i</h2>
-<p class="lead">
-Vi utgår från Helsingborg och hjälper även kunder i närliggande kommuner och i hela nordvästra Skåne.
-</p>
+          <article class="result-card">
+            <div class="result-images">
+              <div class="result-image">
+                <img src="before2.jpg" alt="Före- och efterbild från bortforsling av skrymmande material" width="1290" height="1612" loading="lazy">
+                <span class="result-label">Resultat</span>
+              </div>
+              <div class="result-image">
+                <img src="after2.jpg" alt="Yasmine’s servicebil och släp på plats vid ett uppdrag" width="4284" height="5712" loading="lazy">
+                <span class="result-label">På plats</span>
+              </div>
+            </div>
+            <div class="result-copy">
+              <h3>Trädgård & skrymmande material</h3>
+              <p>Sorterat, lastat och bortforslat enligt överenskommelse.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<div class="areas">
-<div class="chip">Helsingborg</div>
-<div class="chip">Höganäs</div>
-<div class="chip">Ängelholm</div>
-<div class="chip">Bjuv</div>
-<div class="chip">Åstorp</div>
-<div class="chip">Närliggande kommuner</div>
-<div class="chip">Nordvästra Skåne</div>
-</div>
-</div>
-</div>
+    <section class="section" id="foretag">
+      <div class="container">
+        <div class="business-card">
+          <div class="business-copy">
+            <p class="eyebrow">För företag & fastighetsägare</p>
+            <h2>En lokal utförare när något måste bort.</h2>
+            <p>
+              Vi hjälper fastighetsägare, förvaltare, verkstäder och andra verksamheter med mindre engångshämtningar eller återkommande bortforsling av icke-farligt avfall.
+            </p>
 
-<div class="section" id="fore-efter">
-<div class="wrap">
-<h2>Före & efter</h2>
-<p class="lead">Riktiga jobb och riktiga resultat. Här ser du exempel på hur det kan se ut före och efter.</p>
+            <ul class="business-list">
+              <li>Lägenheter & förråd</li>
+              <li>Gemensamma utrymmen</li>
+              <li>Lager & verksamheter</li>
+              <li>Engångs- eller återkommande jobb</li>
+            </ul>
 
-<div class="gallery">
-<img src="before1.jpg" alt="Före – bortforsling">
-<img src="after1.jpg" alt="Efter – städat och klart">
-<img src="before2.jpg" alt="Före – trädgårdsavfall">
-<img src="after2.jpg" alt="Efter – rent och snyggt">
-</div>
-</div>
-</div>
+            <a class="btn btn-forest" href="mailto:yasminesavfall@gmail.com?subject=F%C3%B6rfr%C3%A5gan%20om%20f%C3%B6retagstj%C3%A4nst">Prata om ett samarbete</a>
+          </div>
 
-<div class="section" id="faq">
-<div class="wrap">
-<h2>Vanliga frågor</h2>
-<p class="lead">Här är några snabba svar på frågor många kunder har innan de bokar.</p>
+          <aside class="business-aside" aria-label="Information för företag">
+            <div class="business-note">
+              <span class="note-label">Tydlig avgränsning</span>
+              <h3>Tömt och redo för nästa steg</h3>
+              <p>Vi utför inte städning. Vi sköter bärning, sortering och bortforsling och lämnar utrymmet tömt för städföretag eller nästa hyresgäst.</p>
+              <a class="text-link" href="tel:+46768528512">Ring 076-852 85 12 →</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-<div class="faq">
-<div class="faq-item">
-<h3>Hur får jag offert?</h3>
-<p>Det snabbaste är att skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med prisförslag.</p>
-</div>
+    <section class="section section-soft" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Lokalt i nordvästra Skåne</p>
+          <h2 id="areas-title">Vi utgår från Helsingborg.</h2>
+          <p class="section-lead">Fråga gärna även om din ort inte står med nedan.</p>
+        </div>
 
-<div class="faq-item">
-<h3>Kan ni hjälpa till med små träd och fruktträd?</h3>
-<p>Ja, vi hjälper även till att fälla små träd och fruktträd. Vi kan också ta hand om bortforslingen efteråt.</p>
-</div>
+        <div class="areas" aria-label="Områden vi arbetar i">
+          <span class="area">Helsingborg</span>
+          <span class="area">Höganäs</span>
+          <span class="area">Ängelholm</span>
+          <span class="area">Bjuv</span>
+          <span class="area">Åstorp</span>
+          <span class="area">Landskrona</span>
+          <span class="area">Nordvästra Skåne</span>
+        </div>
 
-<div class="faq-item">
-<h3>Hanterar ni farligt avfall?</h3>
-<p>Nej, vi hanterar inte farligt avfall som kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller andra miljöfarliga material. Vi hanterar inte heller bygg- och rivningsavfall.</p>
-</div>
+        <div class="review-link-card">
+          <span class="google-label">Google</span>
+          <span>
+            <strong>Se vad kunderna säger om oss</strong>
+            <span>Läs omdömen och kontrollera företaget på Google.</span>
+          </span>
+          <a class="text-link" href="https://www.google.com/search?q=Yasmines+Tr%C3%A4dg%C3%A5rdsavfall+och+Skr%C3%A4p+Helsingborg" target="_blank" rel="noopener noreferrer">Öppna Google →</a>
+        </div>
+      </div>
+    </section>
 
-<div class="faq-item">
-<h3>Har ni tillstånd för avfallstransport?</h3>
-<p>Ja, Yasmine’s Trädgårdsavfall och Skräp har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall. Tillståndet gäller till 2029.</p>
-</div>
+    <section class="section" id="fragor">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Bra att veta</p>
+          <h2>Vanliga frågor.</h2>
+        </div>
 
-<div class="faq-item">
-<h3>Hjälper ni både privatpersoner och företag?</h3>
-<p>Ja, vi hjälper både privatpersoner och företag med bortforsling, tömning och trädgårdsavfall.</p>
-</div>
-</div>
-</div>
-</div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Hur får jag en offert?</summary>
+            <div class="faq-answer">
+              <p>Skicka ett SMS med bild, ort och ungefärlig mängd. Då kan vi snabbt återkomma med prisförslag. Vid större jobb kan vi även boka en kostnadsfri besiktning.</p>
+            </div>
+          </details>
 
-<div class="section" id="kontakt">
-<div class="wrap">
-<h2>Kontakt</h2>
-<p class="lead">Snabbast går det via SMS med bild, men du kan också ringa eller mejla direkt.</p>
+          <details class="faq-item">
+            <summary>Hjälper ni till med trädfällning?</summary>
+            <div class="faq-answer">
+              <p>Ja, vi hjälper till med fällning av mindre träd och fruktträd. Vi kan kapa trädet i hanterbara bitar och ta hand om bortforslingen efteråt.</p>
+            </div>
+          </details>
 
-<div class="contact">
-<div class="panel">
-<h3>Snabb kontakt</h3>
-<p><strong>Telefon:</strong> 0768528512</p>
-<p><strong>Område:</strong> Helsingborg, närliggande kommuner och hela nordvästra Skåne.</p>
-<div style="display:flex; gap:10px; flex-wrap:wrap;">
-<a class="btn primary" href="sms:0768528512">💬 Skicka bild via SMS</a>
-<a class="btn" href="tel:0768528512">📞 Ring nu</a>
-</div>
-</div>
+          <details class="faq-item">
+            <summary>Har ni tillstånd för avfallstransport?</summary>
+            <div class="faq-answer">
+              <p>Ja. Yasmine’s har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall. Tillståndet gäller till 2029.</p>
+            </div>
+          </details>
 
-<div class="panel">
-<h3>Mejl</h3>
-<p>
-Vill du mejla direkt? Skriv gärna vad som ska bort, vilken ort det gäller och skicka gärna med en bild om du kan.
-</p>
-<div style="display:flex; gap:10px; flex-wrap:wrap;">
-<a class="btn primary" href="mailto:yasminesavfall@gmail.com">📧 yasminesavfall@gmail.com</a>
-<a class="btn" href="sms:0768528512">💬 Hellre SMS</a>
-</div>
-<p style="margin-top:12px; color:var(--muted); font-size:13px;">
-Tips: SMS med bild går snabbast för offert.
-</p>
-</div>
-</div>
+          <details class="faq-item">
+            <summary>Hanterar ni farligt avfall?</summary>
+            <div class="faq-answer">
+              <p>Nej. Vi hanterar inte kemikalier, färg, oljor, asbest, tryckimpregnerat trä eller annat farligt avfall. Vi hanterar inte heller bygg- och rivningsavfall.</p>
+            </div>
+          </details>
 
-<div style="margin-top:14px;">
-<a class="btn primary full" href="sms:0768528512">💬 Få snabb offert nu</a>
-</div>
+          <details class="faq-item">
+            <summary>Hjälper ni både privatpersoner och företag?</summary>
+            <div class="faq-answer">
+              <p>Ja. Vi hjälper privatpersoner, företag, fastighetsägare och förvaltare i Helsingborg och nordvästra Skåne.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
 
-<div style="margin-top:12px; color:var(--muted); font-size:13px;">
-Webb: www.yasmine.nu
-</div>
-</div>
-</div>
+    <section class="contact-section" id="kontakt">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow eyebrow-light">Få en snabb offert</p>
+            <h2>Skicka en bild – så tar vi det därifrån.</h2>
+            <p class="contact-intro">
+              Skriv vilken ort det gäller och vad som ska tas bort. Bifoga gärna flera bilder så blir det enklare att lämna ett tydligt pris.
+            </p>
 
-<div class="footer">
-<div class="wrap">
-<strong style="color:rgba(238,247,242,.92)">Yasmine’s Trädgårdsavfall och Skräp</strong><br>
-Bortforsling, trädgårdsavfall, förrådstömning samt fällning av små träd och fruktträd.<br>
-<strong>Tillstånd:</strong> Vi har tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall, giltigt till 2029.<br>
-<strong>Observera:</strong> Vi hanterar inte farligt avfall eller bygg- och rivningsavfall.<br>
-Telefon: <a href="tel:0768528512">0768528512</a> • SMS: <a href="sms:0768528512">Skicka bild för offert</a> • Mejl: <a href="mailto:yasminesavfall@gmail.com">yasminesavfall@gmail.com</a>
-</div>
-</div>
+            <div class="contact-actions">
+              <a class="btn btn-gold" href="sms:+46768528512">Skicka bild via SMS</a>
+              <a class="btn btn-light" href="tel:+46768528512">Ring oss direkt</a>
+            </div>
+          </div>
 
+          <div class="contact-details">
+            <div class="contact-row">
+              <span>Telefon & SMS</span>
+              <a href="tel:+46768528512">076-852 85 12</a>
+            </div>
+            <div class="contact-row">
+              <span>E-post</span>
+              <a href="mailto:yasminesavfall@gmail.com">yasminesavfall@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <span>Område</span>
+              <strong>Helsingborg & nordvästra Skåne</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img src="logo.png" alt="" width="1024" height="1024" loading="lazy">
+            <strong>Yasmine’s Trädgårdsavfall<br>och Skräp</strong>
+          </div>
+          <p class="footer-about">
+            Lokal hjälp med bortforsling, trädgårdsavfall, tömning och fällning av mindre träd i Helsingborg med omnejd.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-title">Genvägar</p>
+          <nav class="footer-links" aria-label="Sidfotsmeny">
+            <a href="#tjanster">Tjänster</a>
+            <a href="#sa-funkar-det">Så funkar det</a>
+            <a href="#resultat">Före & efter</a>
+            <a href="#foretag">För företag</a>
+            <a href="#fragor">Vanliga frågor</a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer-title">Kontakt</p>
+          <div class="footer-links">
+            <a href="tel:+46768528512">076-852 85 12</a>
+            <a href="mailto:yasminesavfall@gmail.com">yasminesavfall@gmail.com</a>
+            <a href="https://www.facebook.com/p/Yasmines-tr%C3%A4dg%C3%A5rdsavfall-och-skr%C3%A4p-61566173922771/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="legal-note">
+        <strong>F-skatt.</strong> Tillstånd från Länsstyrelsen för yrkesmässig transport av icke-farligt avfall, giltigt till 2029.
+        Vi hanterar inte farligt avfall eller bygg- och rivningsavfall.
+        © <span id="year">2026</span> Yasmine’s Trädgårdsavfall och Skräp.
+      </p>
+    </div>
+  </footer>
+
+  <div class="mobile-actions" aria-label="Snabbkontakt">
+    <a class="mobile-call" href="tel:+46768528512">Ring</a>
+    <a class="mobile-sms" href="sms:+46768528512">Skicka bild via SMS</a>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    function closeMenu() {
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Öppna menyn");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      mobileMenu.classList.remove("open");
+      document.body.classList.remove("menu-open");
+    }
+
+    function openMenu() {
+      menuButton.setAttribute("aria-expanded", "true");
+      menuButton.setAttribute("aria-label", "Stäng menyn");
+      mobileMenu.setAttribute("aria-hidden", "false");
+      mobileMenu.classList.add("open");
+      document.body.classList.add("menu-open");
+    }
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) closeMenu();
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
