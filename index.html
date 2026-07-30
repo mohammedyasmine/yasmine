@@ -611,16 +611,20 @@
       border-right: 0;
     }
 
-    .trust-check {
+    .trust-item > .trust-check {
       width: 34px;
       height: 34px;
       flex: 0 0 auto;
       display: grid;
       place-items: center;
+      margin: 0;
       border-radius: 50%;
       background: var(--leaf);
       color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
       font-weight: 900;
+      line-height: 1;
     }
 
     .trust-item strong {
@@ -631,7 +635,7 @@
       line-height: 1.35;
     }
 
-    .trust-item span {
+    .trust-item > span:not(.trust-check) > span {
       display: block;
       margin-top: 3px;
       color: var(--muted);
